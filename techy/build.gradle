@@ -1,31 +1,206 @@
 apply plugin: 'java'
-apply plugin: 'eclipse'
+apply plugin: 'war'
+apply plugin: 'eclipse-wtp'
 
-sourceCompatibility = 1.5
-version = '1.0'
-jar {
-    manifest {
-        attributes 'Implementation-Title': 'Gradle Quickstart', 'Implementation-Version': version
-    }
+repositories { mavenCentral() }
+
+ext {
+	//Generic Properties
+	java_version = '1.7'
+	project_build_sourceEncoding = 'UTF-8'
+	project_reporting_outputEncoding = 'UTF-8'
+
+	//Spring
+	spring_data_jpa_version = '1.3.0.RELEASE'
+	spring_framework_version = '3.2.4.RELEASE'
+
+	//Thymeleaf
+	thymeleaf_version = '2.0.17'
+
+	//Java SE/EE
+	jsp_version = '2.2'
+	jstl_version = '1.2'
+	servlet_version = '3.0.1'
+	javax_el_version = '2.2'
+	jaxb_api_version = '2.2.7'
+	jaxb_impl_version = '2.2.7-b53'
+
+	//Hibernate
+	hibernate_version = '4.2.4.Final'
+	hibernate_jpa_version = '1.0.1.Final'
+
+	//Bean Validation
+	validation_version = '1.1.0.Final'
+	hibernate_validator_version = '5.0.1.Final'
+
+	//Database Access
+	commons_dbcp_version = '1.4'
+	ehcache_version = '2.6.6'
+
+
+	hsqldb_version = '2.3.0'
+
+	//AOP
+	aspectj_version = '1.7.3'
+
+	//Loggging
+	logback_version = '1.0.9'
+	log4j_version = '1.2.17'
+	slf4j_version = '1.7.2'
+
+	//Testing
+	junit_version = '4.11'
+	hamcrest_version = '1.3'
+
+	//Dates
+	jodatime_hibernate_version = '1.3'
+	jodatime_jsptags_version = '1.1.1'
+	jodatime_version = '2.2'
+	jadira_usertype_core_version = '3.1.0.CR1'
+
+	//Web Dependencies
+	webjars_bootstrap_version = '2.3.2'
+	webjars_jquery_ui_version = '1.10.2'
+	webjars_jquery_version = '2.0.3'
+	dandelion_datatables_version = '0.8.14'
 }
 
-repositories {
-    mavenCentral()
+buildscript {
+	repositories { mavenLocal() }
+
+	dependencies { classpath "org.vbossica:gradle-glassfish3-plugin:1.1-SNAPSHOT" }
+}
+
+
+apply plugin: 'glassfish3'
+
+glassfish3 {
+	asadminExec = file('C:/glassfish4/glassfish/bin/asadmin.bat')
+	domainDir = file('C:/glassfish4/glassfish/domains/others')
+}
+
+configurations.all {
+	resolutionStrategy {
+		eachDependency { details ->
+			if (!details.requested.version) {
+				if (details.requested.group == 'org.springframework') {
+					details.useVersion '3.2.2.RELEASE'
+				}
+				else if (details.requested.group == 'org.hibernate') {
+					details.useVersion '4.1.9.Final'
+				}
+			}
+		}
+	}
+}
+
+configurations {
+	web
+	database
+	tools
+	date
+	spring
+	hibernate
+	log
+
+	compile.extendsFrom spring, web, date, tools, hibernate
+	runtime.extendsFrom database, log
 }
 
 dependencies {
-    compile group: 'commons-collections', name: 'commons-collections', version: '3.2'
-    testCompile group: 'junit', name: 'junit', version: '4.+'
+	spring("org.springframework.data:spring-data-jpa:${spring_data_jpa_version}") {
+		exclude group: 'org.springframework', module: '*'
+	}
+	
+	spring("org.springframework:spring-jdbc") {
+		exclude group: 'commons-logging', module: 'commons-logging'
+	}
+
+	spring("org.springframework:spring-jdbc")
+	spring("org.springframework:spring-aop")
+	spring("org.springframework:spring-webmvc")
+	spring("org.springframework:spring-tx")
+	spring("org.springframework:spring-context-support") {
+		exclude group: 'quartz', module: 'quartz'
+	}
+	spring("org.springframework:spring-orm")
+	spring("org.springframework:spring-oxm") {
+		exclude group: 'commons-lang', module: 'commons-lang'
+	}
+	spring("org.springframework:spring-jms")
+
+	hibernate("org.hibernate:hibernate-core") {
+		exclude group: 'asm', module: 'asm-attrs'
+	}
+	hibernate("org.hibernate:hibernate-entitymanager")
+	hibernate("org.hibernate.javax.persistence:hibernate-jpa-2.0-api:${hibernate_jpa_version}")
+	hibernate("org.hibernate:hibernate-validator:${hibernate_validator_version}")
+	hibernate("org.hibernate:hibernate-ehcache")
+
+	web("javax.validation:validation-api:${validation_version}")
+//	web("javax.servlet:jstl:${jstl_version}")
+//	web("javax.servlet.jsp.jstl:jstl-api:${jstl_version}")
+	web("org.thymeleaf:thymeleaf-spring3:${thymeleaf_version}")
+//	web("org.glassfish.web:jstl-impl:${jstl_version}")
+	web("com.github.dandelion:datatables-jsp:${dandelion_datatables_version}")
+	web("com.github.dandelion:datatables-export-itext:${dandelion_datatables_version}")
+	web("com.github.dandelion:datatables-servlet2:${dandelion_datatables_version}")
+
+	tools("net.sf.ehcache:ehcache-core:${ehcache_version}") {
+		exclude group: 'commons-logging', module: 'commons-logging'
+	}
+	tools("org.webjars:bootstrap:${webjars_bootstrap_version}")
+	tools("org.webjars:jquery-ui:${webjars_jquery_ui_version}")
+	tools("org.webjars:jquery:${webjars_jquery_version}")
+	tools("org.aspectj:aspectjrt:${aspectj_version}")
+
+	date("org.jadira.usertype:usertype.core:${jadira_usertype_core_version}")
+	date("joda-time:joda-time:${jodatime_version}")
+	date("joda-time:joda-time-hibernate:${jodatime_hibernate_version}")
+	date("joda-time:joda-time-jsptags:${jodatime_jsptags_version}")
+
+	database("org.hsqldb:hsqldb:${hsqldb_version}")
+	database("commons-dbcp:commons-dbcp:${commons_dbcp_version}")
+
+	providedCompile("javax.el:el-api:${javax_el_version}")
+	providedCompile("javax.servlet:javax.servlet-api:${servlet_version}")
+//	providedCompile("javax.servlet.jsp:jsp-api:${jsp_version}")
+	providedCompile("javax.xml.bind:jaxb-api:${jaxb_api_version}")
+	providedCompile("com.sun.xml.bind:jaxb-impl:${jaxb_impl_version}")
+
+	log("org.slf4j:jcl-over-slf4j:${slf4j_version}")
+	log("org.slf4j:slf4j-api:${slf4j_version}")
+	log("org.slf4j:jul-to-slf4j:${slf4j_version}")
+	log("ch.qos.logback:logback-classic:${logback_version}")
+	log("ch.qos.logback:logback-core:${logback_version}")
+	runtime("org.aspectj:aspectjweaver:${aspectj_version}")
+
+	testCompile("org.springframework:spring-test")
+	testCompile("junit:junit:${junit_version}")
+	testCompile("org.hamcrest:hamcrest-library:${hamcrest_version}")
+	testCompile("org.hamcrest:hamcrest-core:${hamcrest_version}")
+
 }
 
-test {
-    systemProperties 'property': 'value'
+allprojects {
+	afterEvaluate {
+		configurations.all { conf ->
+			conf.exclude group: "commons-logging", module: "commons-logging"
+		}
+	}
 }
 
-uploadArchives {
-    repositories {
-       flatDir {
-           dirs 'repos'
-       }
-    }
+
+sourceCompatibility = "${java_version}"
+targetCompatibility = "${java_version}"
+[compileJava, compileTestJava]*.options*.encoding = "${project_build_sourceEncoding}"
+//compileJava.options.fork = true
+//compileJava.options.forkOptions.executable = "C:\\Program Files\\Java\\jdk1.6.0_43\\bin\\javac.exe"
+
+processTestResources {
+	from(sourceSets.test.java.srcDirs) {
+		include '**/*.xml'
+	}
 }
+
+war.baseName = 'techy'
