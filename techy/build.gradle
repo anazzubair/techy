@@ -68,7 +68,7 @@ ext {
 buildscript {
 	repositories { mavenLocal() }
 
-	dependencies { classpath "org.vbossica:gradle-glassfish3-plugin:1.1-SNAPSHOT" }
+	dependencies { classpath "org.vbossica:gradle-glassfish3-plugin:1.2-SNAPSHOT" }
 }
 
 
