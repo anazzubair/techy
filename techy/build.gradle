@@ -45,6 +45,7 @@ ext {
 
 
 	hsqldb_version = '2.3.0'
+	postgresql_version = '9.2-1003-jdbc4'
 
 	//AOP
 	aspectj_version = '1.7.3'
@@ -165,6 +166,7 @@ dependencies {
 	date("joda-time:joda-time-jsptags:${jodatime_jsptags_version}")
 
 	database("org.hsqldb:hsqldb:${hsqldb_version}")
+	database("org.postgresql:postgresql:${postgresql_version}")
 	database("commons-dbcp:commons-dbcp:${commons_dbcp_version}")
 
 	providedCompile("javax.el:el-api:${javax_el_version}")

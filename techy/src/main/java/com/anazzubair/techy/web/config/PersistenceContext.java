@@ -10,23 +10,21 @@ import org.springframework.dao.annotation.PersistenceExceptionTranslationPostPro
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.jpa.JpaTransactionManager;
-import org.springframework.orm.jpa.JpaVendorAdapter;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.transaction.PlatformTransactionManager;
 
 @Configuration
-@EnableJpaRepositories(basePackages = { "com.anazzubair.techy.entity" })
+@EnableJpaRepositories(basePackages = { "com.anazzubair.techy.business.repository" })
 public class PersistenceContext {
 
 	@Bean
 	public LocalContainerEntityManagerFactoryBean entityManagerFactoryBean() {
 		LocalContainerEntityManagerFactoryBean em = new LocalContainerEntityManagerFactoryBean();
 		em.setDataSource(dataSource());
-		em.setPackagesToScan(new String[] { "org.baeldung.persistence.model" });
+		em.setPackagesToScan(new String[] { "com.anazzubair.techy.business.model" });
 
-		JpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
-		em.setJpaVendorAdapter(vendorAdapter);
+		em.setJpaVendorAdapter(new HibernateJpaVendorAdapter());
 		em.setJpaProperties(additionalProperties());
 
 		return em;
@@ -35,10 +33,10 @@ public class PersistenceContext {
 	 @Bean
 	   public DataSource dataSource(){
 	      DriverManagerDataSource dataSource = new DriverManagerDataSource();
-	      dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-	      dataSource.setUrl("jdbc:mysql://localhost:3306/spring_jpa");
-	      dataSource.setUsername( "tutorialuser" );
-	      dataSource.setPassword( "tutorialmy5ql" );
+	      dataSource.setDriverClassName("org.postgresql.Driver");
+	      dataSource.setUrl("jdbc:postgresql://localhost:5432/anaz");
+	      dataSource.setUsername( "anaz" );
+	      dataSource.setPassword( "anazhana09" );
 	      return dataSource;
 	   }
 	 
@@ -61,8 +59,11 @@ public class PersistenceContext {
 			private static final long serialVersionUID = -4560379667896825386L;
 
 			{  // Hibernate Specific:
-	            setProperty("hibernate.hbm2ddl.auto", "create-drop");
-	            setProperty("hibernate.dialect", "org.hibernate.dialect.MySQL5Dialect");
+	            //setProperty("hibernate.hbm2ddl.auto", "create-drop");
+	            setProperty("hibernate.dialect", "org.hibernate.dialect.PostgreSQLDialect");
+	            setProperty("hibernate.show_sql", "true");
+	            setProperty("hibernate.format_sql",  "true");
+	            setProperty("hibernate.ejb.naming_strategy", "org.hibernate.cfg.ImprovedNamingStrategy");
 	         }
 	      };
 	   }

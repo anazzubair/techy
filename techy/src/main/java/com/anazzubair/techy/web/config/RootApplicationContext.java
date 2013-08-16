@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Import;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
-@ComponentScan(basePackages = { "com.anazzubair.techy.service" })
+@ComponentScan(basePackages = { "com.anazzubair.techy.business.service" })
 @Import(PersistenceContext.class)
 @EnableTransactionManagement
 public class RootApplicationContext {
