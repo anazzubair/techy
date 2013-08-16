@@ -19,7 +19,7 @@ import org.springframework.transaction.PlatformTransactionManager;
 public class PersistenceContext {
 
 	@Bean
-	public LocalContainerEntityManagerFactoryBean entityManagerFactoryBean() {
+	public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
 		LocalContainerEntityManagerFactoryBean em = new LocalContainerEntityManagerFactoryBean();
 		em.setDataSource(dataSource());
 		em.setPackagesToScan(new String[] { "com.anazzubair.techy.business.model" });
@@ -29,42 +29,45 @@ public class PersistenceContext {
 
 		return em;
 	}
-	
-	 @Bean
-	   public DataSource dataSource(){
-	      DriverManagerDataSource dataSource = new DriverManagerDataSource();
-	      dataSource.setDriverClassName("org.postgresql.Driver");
-	      dataSource.setUrl("jdbc:postgresql://localhost:5432/anaz");
-	      dataSource.setUsername( "anaz" );
-	      dataSource.setPassword( "anazhana09" );
-	      return dataSource;
-	   }
-	 
-	   @Bean
-	   public PlatformTransactionManager transactionManager(){
-	      JpaTransactionManager transactionManager = new JpaTransactionManager();
-	      transactionManager.setEntityManagerFactory(
-	       entityManagerFactoryBean().getObject() );
-	 
-	      return transactionManager;
-	   }
-	 
-	   @Bean
-	   public PersistenceExceptionTranslationPostProcessor exceptionTranslation(){
-	      return new PersistenceExceptionTranslationPostProcessor();
-	   }
-	 
-	   Properties additionalProperties() {
-	      return new Properties() {
+
+	@Bean
+	public DataSource dataSource() {
+		DriverManagerDataSource dataSource = new DriverManagerDataSource();
+		dataSource.setDriverClassName("org.postgresql.Driver");
+		dataSource.setUrl("jdbc:postgresql://localhost:5432/anaz");
+		dataSource.setUsername("anaz");
+		dataSource.setPassword("anazhana09");
+		return dataSource;
+	}
+
+	@Bean
+	public PlatformTransactionManager transactionManager() {
+		JpaTransactionManager transactionManager = new JpaTransactionManager();
+		transactionManager.setEntityManagerFactory(entityManagerFactory()
+				.getObject());
+
+		return transactionManager;
+	}
+
+	@Bean
+	public PersistenceExceptionTranslationPostProcessor exceptionTranslation() {
+		return new PersistenceExceptionTranslationPostProcessor();
+	}
+
+	Properties additionalProperties() {
+		return new Properties() {
 			private static final long serialVersionUID = -4560379667896825386L;
 
-			{  // Hibernate Specific:
-	            //setProperty("hibernate.hbm2ddl.auto", "create-drop");
-	            setProperty("hibernate.dialect", "org.hibernate.dialect.PostgreSQLDialect");
-	            setProperty("hibernate.show_sql", "true");
-	            setProperty("hibernate.format_sql",  "true");
-	            setProperty("hibernate.ejb.naming_strategy", "org.hibernate.cfg.ImprovedNamingStrategy");
-	         }
-	      };
-	   }
+			{ // Hibernate Specific:
+				// setProperty("hibernate.hbm2ddl.auto", "create-drop");
+				setProperty("hibernate.dialect",
+						"org.hibernate.dialect.PostgreSQLDialect");
+				setProperty("hibernate.show_sql", "true");
+				setProperty("hibernate.format_sql", "true");
+				//setProperty("hibernate.default_schema", "public");
+//				setProperty("hibernate.ejb.naming_strategy",
+//						"org.hibernate.cfg.ImprovedNamingStrategy");
+			}
+		};
+	}
 }
