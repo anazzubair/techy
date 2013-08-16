@@ -12,10 +12,9 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages = { "com.anazzubair.techy.web.controller",
-		"com.anazzubair.techy.web.service" })
+@ComponentScan(basePackages = { "com.anazzubair.techy.web.controller" })
 @Import({ThymeleafConfig.class})
-public class ApplicationContext extends WebMvcConfigurerAdapter {
+public class ServletApplicationContext extends WebMvcConfigurerAdapter {
 
 	@Override
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
