@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="30 seconds" debug="true">
+
+    <contextListener class="ch.qos.logback.classic.jul.LevelChangePropagator">
+        <resetJUL>true</resetJUL>
+    </contextListener>
+
+    <!-- To enable JMX Management -->
+    <jmxConfigurator/>
+    
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <encoder>
+            <pattern>%d %5p | %t | %-55logger{55} | %m %n</pattern>
+        </encoder>
+        <file>../logs/syslog.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>syslog_%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>3</maxHistory>
+        </rollingPolicy>
+    </appender>
+ 
+    <logger name="com.anazzubair.techy">
+        <level value="INFO" />
+    </logger>
+ 
+    <logger name="org.springframework">
+        <level value="INFO" />
+    </logger>
+    
+    <logger name="org.hibernate">
+    	<level value="INFO" />
+    </logger>
+ 
+    <root>
+        <level value="INFO" />
+        <appender-ref ref="FILE" />
+    </root>
+</configuration>

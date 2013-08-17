@@ -1,5 +1,7 @@
 package com.anazzubair.techy.web.controller;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Propagation;
@@ -15,12 +17,16 @@ import com.anazzubair.techy.business.service.UserService;
 @Transactional(propagation = Propagation.REQUIRES_NEW)
 public class IndexController {
 	
+	private final static Logger logger = LoggerFactory.getLogger(IndexController.class);
+	
 	@Autowired
 	private UserService userService;
 	
 	@RequestMapping(value="/some.html")
 	public ModelAndView indexPage() {
 		
+		logger.debug("something logged");
+		logger.info("another log");
 		User user = userService.getMeAUser();
 		return new ModelAndView("index", "user", user);
 	}
