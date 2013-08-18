@@ -72,15 +72,17 @@ ext {
 
 buildscript {
 	repositories { mavenLocal() }
-	dependencies { classpath "org.vbossica:gradle-glassfish3-plugin:1.2-SNAPSHOT" }
+	dependencies { classpath "org.vbossica:gradle-glassfish4-plugin:4.0-SNAPSHOT" }
 }
 
 
-apply plugin: 'glassfish3'
+apply plugin: 'glassfish4'
 
-glassfish3 {
+glassfish4 {
 	asadminExec = file('C:/glassfish4/glassfish/bin/asadmin.bat')
 	domainDir = file('C:/glassfish4/glassfish/domains/others')
+	domainName = "others"
+	
 }
 
 configurations.all {
