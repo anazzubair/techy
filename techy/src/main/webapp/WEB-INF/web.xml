@@ -8,5 +8,7 @@
 	<display-name>Techy</display-name>
 	<description>An application using the latest technologies in EE7</description>
     
-    
+    <welcome-file-list>
+    	<welcome-file>index.html</welcome-file>
+    </welcome-file-list>
 </web-app>
