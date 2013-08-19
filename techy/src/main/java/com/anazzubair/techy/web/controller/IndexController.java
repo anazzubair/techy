@@ -23,7 +23,7 @@ public class IndexController {
 	private UserService userService;
 	
 	@RequestMapping(value={"/", "/index.html"})
-	public ModelAndView indexPage() {
+	public ModelAndView index() {
 		
 		logger.debug("something logged");
 		logger.info("another log");

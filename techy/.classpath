@@ -4,410 +4,410 @@
 	<classpathentry kind="src" path="src/main/resources"/>
 	<classpathentry kind="src" path="src/test/java"/>
 	<classpathentry kind="src" path="src/test/resources"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER" exported="true"/>
-	<classpathentry kind="con" path="org.springsource.ide.eclipse.gradle.classpathcontainer" exported="true">
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/antlr/antlr/2.7.7/jar/83cd2cd674a217ade95a4bb83a8a14f351f48bd0/antlr-2.7.7.jar">
 		<attributes>
-			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="output" path="bin"/>
-	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container" exported="true"/>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.hsqldb/hsqldb/2.3.0/source/4e6837c5624b5e169fc5a103d0284995b16071a7/hsqldb-2.3.0-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.hsqldb/hsqldb/2.3.0/jar/93306187b1a782f2b929d12536022185487037d2/hsqldb-2.3.0.jar" exported="true">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.hsqldb/hsqldb/2.3.0/javadoc/78493677534c0296dc1001a219159992fae598d4/hsqldb-2.3.0-javadoc.jar!/"/>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/commons-dbcp/commons-dbcp/1.4/source/9b076ff231434d5403be6599a1347019b12c0def/commons-dbcp-1.4-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/commons-dbcp/commons-dbcp/1.4/jar/30be73c965cc990b153a100aaaaafcf239f82d39/commons-dbcp-1.4.jar" exported="true">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/commons-dbcp/commons-dbcp/1.4/javadoc/98bf7c8d5b026f6e3969259a36e813ac37432b3/commons-dbcp-1.4-javadoc.jar!/"/>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.jadira.usertype/usertype.core/3.1.0.CR1/source/626ddbb50bb483e83b41cc5c0dadfa32f9593a64/usertype.core-3.1.0.CR1-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.jadira.usertype/usertype.core/3.1.0.CR1/jar/167177b63a95ab32c8bc9dfe0d07781d1e219847/usertype.core-3.1.0.CR1.jar" exported="true">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.jadira.usertype/usertype.core/3.1.0.CR1/javadoc/684a6375ceae0f291883ced58b31dea6902100b8/usertype.core-3.1.0.CR1-javadoc.jar!/"/>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/joda-time/joda-time/2.2/source/ad622e3cfe39319ea53b183aa5615f96ff346584/joda-time-2.2-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/joda-time/joda-time/2.2/jar/a5f29a7acaddea3f4af307e8cf2d0cc82645fd7d/joda-time-2.2.jar" exported="true">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/joda-time/joda-time/2.2/javadoc/c3293e04facc30556dc0b5a2367491dd2ec3ea5d/joda-time-2.2-javadoc.jar!/"/>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/joda-time/joda-time-hibernate/1.3/source/1c5f6500ff9bb4698563539ba88a7e071a268deb/joda-time-hibernate-1.3-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/joda-time/joda-time-hibernate/1.3/jar/2b8773a3d2834d2c0901ac9b3c4a49b79b278f3a/joda-time-hibernate-1.3.jar" exported="true">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/joda-time/joda-time-hibernate/1.3/javadoc/e7a0eba11980dae43ae5932f4bc6f63ad796a931/joda-time-hibernate-1.3-javadoc.jar!/"/>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/joda-time/joda-time-jsptags/1.1.1/source/2b9e2f68c7c2ba87c5c9bbb23044d15cdb82bb38/joda-time-jsptags-1.1.1-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/joda-time/joda-time-jsptags/1.1.1/jar/da62400b7d48cec7714e3bd1fec2be94a7521db6/joda-time-jsptags-1.1.1.jar" exported="true">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/joda-time/joda-time-jsptags/1.1.1/javadoc/df9614735a8e870df219b94bc14b84d45ad8f52f/joda-time-jsptags-1.1.1-javadoc.jar!/"/>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.hibernate/hibernate-core/4.2.4.Final/source/2699d7a941cdf897ebacd5f75b67c6f6803ca3fc/hibernate-core-4.2.4.Final-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.hibernate/hibernate-core/4.2.4.Final/jar/2aea736f6d92e4b2aba6a2f024f099388f6dfe9f/hibernate-core-4.2.4.Final.jar" exported="true">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.hibernate/hibernate-entitymanager/4.2.4.Final/source/b932693e9a19695060f3712acd9285b4b261f2cc/hibernate-entitymanager-4.2.4.Final-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.hibernate/hibernate-entitymanager/4.2.4.Final/jar/a61252d25db35d7cd8ca401f1592f84af2d4828/hibernate-entitymanager-4.2.4.Final.jar" exported="true">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.hibernate.javax.persistence/hibernate-jpa-2.0-api/1.0.1.Final/source/574f65373b46a038332eb1a14acc3142bd9e9810/hibernate-jpa-2.0-api-1.0.1.Final-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.hibernate.javax.persistence/hibernate-jpa-2.0-api/1.0.1.Final/jar/3306a165afa81938fc3d8a0948e891de9f6b192b/hibernate-jpa-2.0-api-1.0.1.Final.jar" exported="true">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.hibernate/hibernate-validator/5.0.1.Final/source/5440d808b0c1fe401c2d54a01902f7f8e87a4d64/hibernate-validator-5.0.1.Final-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.hibernate/hibernate-validator/5.0.1.Final/jar/542a45c94ff8a7551779caaaffd3857d643b9087/hibernate-validator-5.0.1.Final.jar" exported="true">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.hibernate/hibernate-validator/5.0.1.Final/javadoc/74abdc9399358d7b600fde1f0c5a7d4e18577a3d/hibernate-validator-5.0.1.Final-javadoc.jar!/"/>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.hibernate/hibernate-ehcache/4.2.4.Final/source/fcc8561bf09fca466f91372de719accae0617d27/hibernate-ehcache-4.2.4.Final-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.hibernate/hibernate-ehcache/4.2.4.Final/jar/9a294e056dcf6909409a175dcfbf84f1376662cd/hibernate-ehcache-4.2.4.Final.jar" exported="true">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.slf4j/jcl-over-slf4j/1.7.2/source/1489c297b51dd0c35a1f917ae5985683e35b9df3/jcl-over-slf4j-1.7.2-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.slf4j/jcl-over-slf4j/1.7.2/jar/358c500a1262d77e87167cbd0fdfb3ae8eca4fca/jcl-over-slf4j-1.7.2.jar" exported="true">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.slf4j/jcl-over-slf4j/1.7.2/javadoc/e7c899beba4fb65116eeaceb357449db94a0458c/jcl-over-slf4j-1.7.2-javadoc.jar!/"/>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.slf4j/slf4j-api/1.7.2/source/58d38f68d4a867d4552ae27960bb348d7eaa1297/slf4j-api-1.7.2-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.slf4j/slf4j-api/1.7.2/jar/81d61b7f33ebeab314e07de0cc596f8e858d97/slf4j-api-1.7.2.jar" exported="true">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.slf4j/slf4j-api/1.7.2/javadoc/51d9af60bed42176be7a2e495d8e938cbd4060a3/slf4j-api-1.7.2-javadoc.jar!/"/>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.slf4j/jul-to-slf4j/1.7.2/source/69359a149cc33f605476f7520b205ab9da3e757a/jul-to-slf4j-1.7.2-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.slf4j/jul-to-slf4j/1.7.2/jar/2ee8f3304632a2025d3c58aa3b63cd8842740f84/jul-to-slf4j-1.7.2.jar" exported="true">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.slf4j/jul-to-slf4j/1.7.2/javadoc/1e1eb364f31fdf2a3ced95287fca77860909bc3a/jul-to-slf4j-1.7.2-javadoc.jar!/"/>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/ch.qos.logback/logback-classic/1.0.9/source/e898ae326277ae2fe7316935583d3f8c5df7aa9b/logback-classic-1.0.9-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/ch.qos.logback/logback-classic/1.0.9/jar/258c3d8f956e7c8723f13fdea6b81e3d74201f68/logback-classic-1.0.9.jar" exported="true">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/ch.qos.logback/logback-classic/1.0.9/javadoc/9fb09cd9283e7f6bddd0bad999ada68547aa5c30/logback-classic-1.0.9-javadoc.jar!/"/>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/ch.qos.logback/logback-core/1.0.9/source/4511629c49389adc6192811b987b6e6b1b3189eb/logback-core-1.0.9-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/ch.qos.logback/logback-core/1.0.9/jar/41916886a1df068ad1dfea9bcc649a7b8ea4553e/logback-core-1.0.9.jar" exported="true">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/ch.qos.logback/logback-core/1.0.9/javadoc/86452c6064d2d3d06cdb594de2e0d99e1e268790/logback-core-1.0.9-javadoc.jar!/"/>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/javax.el/el-api/2.2/source/710821a592290f5cc1e500f7514cb2fa3557e175/el-api-2.2-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/javax.el/el-api/2.2/jar/42971279cc8ba864462580c7fc2199fd5715ee7f/el-api-2.2.jar" exported="true">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/javax.el/el-api/2.2/javadoc/6fdb5966ee21e51394e88a8c8483cb6f60211d1c/el-api-2.2-javadoc.jar!/"/>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/javax.servlet/javax.servlet-api/3.0.1/source/1952f91d84016a39e31346c9d18bd8c9c4a128a/javax.servlet-api-3.0.1-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/javax.servlet/javax.servlet-api/3.0.1/jar/6bf0ebb7efd993e222fc1112377b5e92a13b38dd/javax.servlet-api-3.0.1.jar" exported="true">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/javax.servlet/javax.servlet-api/3.0.1/javadoc/3f57066b688f59cb998517a6e618bd53492f8c43/javax.servlet-api-3.0.1-javadoc.jar!/"/>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/javax.xml.bind/jaxb-api/2.2.7/source/5fb055d3773b48d759d43290f33e5533b25d2d62/jaxb-api-2.2.7-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/javax.xml.bind/jaxb-api/2.2.7/jar/2f51c4bb4724ea408096ee9100ff2827e07e5b7c/jaxb-api-2.2.7.jar" exported="true">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/javax.xml.bind/jaxb-api/2.2.7/javadoc/94f2f45a47631d28bf61193889fe40b1dc49607d/jaxb-api-2.2.7-javadoc.jar!/"/>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/com.sun.xml.bind/jaxb-impl/2.2.7-b53/source/75f7aefa239372dc9eae7dee636baa7ec9abacd1/jaxb-impl-2.2.7-b53-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/com.sun.xml.bind/jaxb-impl/2.2.7-b53/jar/25d93ccb10ac9073881c4d42d26e1b4765724d32/jaxb-impl-2.2.7-b53.jar" exported="true">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/com.sun.xml.bind/jaxb-impl/2.2.7-b53/javadoc/c38764bb70771b9ed9e1a2f4dc97ab85242ef9ff/jaxb-impl-2.2.7-b53-javadoc.jar!/"/>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.aspectj/aspectjweaver/1.7.3/source/9e1f532be97e6e7b218ceb35925b5d7d285c23bd/aspectjweaver-1.7.3-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.aspectj/aspectjweaver/1.7.3/jar/4086c62f257ab411f28ef75b9c2608a71fadbd24/aspectjweaver-1.7.3.jar" exported="true">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.aspectj/aspectjweaver/1.7.3/javadoc/5b42dc9b90e8469c6a1d352798e5383d1486c41f/aspectjweaver-1.7.3-javadoc.jar!/"/>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework.data/spring-data-jpa/1.3.0.RELEASE/source/49b44bb9c1b4f834823bc5b65319c2f607af8e05/spring-data-jpa-1.3.0.RELEASE-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework.data/spring-data-jpa/1.3.0.RELEASE/jar/a3b29dc1803c6ca08b96acb5477d45dd27a20afd/spring-data-jpa-1.3.0.RELEASE.jar" exported="true">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework.data/spring-data-jpa/1.3.0.RELEASE/javadoc/efa881acdcc42834966e40a2314203e065446ac1/spring-data-jpa-1.3.0.RELEASE-javadoc.jar!/"/>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-jdbc/3.2.4.RELEASE/source/b5bc68ed416985b08a04c6756a6ccd3f9d6d74ee/spring-jdbc-3.2.4.RELEASE-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-jdbc/3.2.4.RELEASE/jar/b0102696b834ebd75292137c0d9348da42c6bf96/spring-jdbc-3.2.4.RELEASE.jar" exported="true">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-jdbc/3.2.4.RELEASE/javadoc/57d86d4099c26ec982276e5270c3ea1ec92575a/spring-jdbc-3.2.4.RELEASE-javadoc.jar!/"/>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-aop/3.2.4.RELEASE/source/c30c2ec8549bbaebf6825495116c7944699e1645/spring-aop-3.2.4.RELEASE-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-aop/3.2.4.RELEASE/jar/773389e56c871ab558b87629b3e7c73fc4bf0ec/spring-aop-3.2.4.RELEASE.jar" exported="true">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-aop/3.2.4.RELEASE/javadoc/e82971b150b10d244b8b53e23fa9864b1e053c68/spring-aop-3.2.4.RELEASE-javadoc.jar!/"/>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-webmvc/3.2.4.RELEASE/source/a0784984bc522a5cee4fba609d510abf6a9cf1cd/spring-webmvc-3.2.4.RELEASE-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-webmvc/3.2.4.RELEASE/jar/99c0303b36c421b3c43dfc2ae55e46fc81dbaefc/spring-webmvc-3.2.4.RELEASE.jar" exported="true">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-webmvc/3.2.4.RELEASE/javadoc/a5ee89dc0a7bf3a955f8bd709ba4b16f7d5c9003/spring-webmvc-3.2.4.RELEASE-javadoc.jar!/"/>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-tx/3.2.4.RELEASE/source/287b228644a73c337cac981e4728a075f459eee7/spring-tx-3.2.4.RELEASE-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-tx/3.2.4.RELEASE/jar/6da00a9bc5ee808211dafc2f642129476a0d63cb/spring-tx-3.2.4.RELEASE.jar" exported="true">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-tx/3.2.4.RELEASE/javadoc/1da4b3bae275e2770b6d259351cc943fb108d4f0/spring-tx-3.2.4.RELEASE-javadoc.jar!/"/>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-context-support/3.2.4.RELEASE/source/842c1fd4ab4960fee601de35a1acf553e3cdd8/spring-context-support-3.2.4.RELEASE-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-context-support/3.2.4.RELEASE/jar/bcb2341e76ef4621f2422b1f066fb34c42fad08d/spring-context-support-3.2.4.RELEASE.jar" exported="true">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-context-support/3.2.4.RELEASE/javadoc/399a3b91c25c3703602fc799a0f8de36d4a51a2a/spring-context-support-3.2.4.RELEASE-javadoc.jar!/"/>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-orm/3.2.4.RELEASE/source/7d15b49e4b5d32489739ae5001f92aecaf098bb/spring-orm-3.2.4.RELEASE-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-orm/3.2.4.RELEASE/jar/acaf0ce231bbb0de687d3ba6a9a495167b9cea98/spring-orm-3.2.4.RELEASE.jar" exported="true">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-orm/3.2.4.RELEASE/javadoc/fd5dab63d9b53165be172986ac86c57e632febeb/spring-orm-3.2.4.RELEASE-javadoc.jar!/"/>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-oxm/3.2.4.RELEASE/source/c0f0fea94825096b0ef3b10935d479230f791e40/spring-oxm-3.2.4.RELEASE-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-oxm/3.2.4.RELEASE/jar/1de9e0537d7ea233668540577e72d86ff6df6d8b/spring-oxm-3.2.4.RELEASE.jar" exported="true">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-oxm/3.2.4.RELEASE/javadoc/2cf8a525d8bf595e99b5efba7e5ab99c9b4b0518/spring-oxm-3.2.4.RELEASE-javadoc.jar!/"/>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-jms/3.2.4.RELEASE/source/76c3ada4628bd6eaaa71a46b3e5215712a4d66d4/spring-jms-3.2.4.RELEASE-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-jms/3.2.4.RELEASE/jar/9c88ef8663cb617ca972bb06391a2968e6de5ea9/spring-jms-3.2.4.RELEASE.jar" exported="true">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-jms/3.2.4.RELEASE/javadoc/879a69c6421931e8a448a13fc6973400eea33a40/spring-jms-3.2.4.RELEASE-javadoc.jar!/"/>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-test/3.2.4.RELEASE/source/a9375fe9c294797fc5a7109fa6e195acfbbd8f5a/spring-test-3.2.4.RELEASE-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-test/3.2.4.RELEASE/jar/a3d08624ed6e54c2492ca866f7423215c45b4dd0/spring-test-3.2.4.RELEASE.jar" exported="true">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-test/3.2.4.RELEASE/javadoc/4fc31bc16486cda4bb97133bb95c001b3b12fdf6/spring-test-3.2.4.RELEASE-javadoc.jar!/"/>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/junit/junit/4.11/source/28e0ad201304e4a4abf999ca0570b7cffc352c3c/junit-4.11-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/junit/junit/4.11/jar/4e031bb61df09069aeb2bffb4019e7a5034a4ee0/junit-4.11.jar" exported="true">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/junit/junit/4.11/javadoc/f3289e8097c0013b711d058b563064c3bded4423/junit-4.11-javadoc.jar!/"/>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.hamcrest/hamcrest-library/1.3/source/47a7ee46628ab7133129cd7cef1e92657bc275e/hamcrest-library-1.3-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.hamcrest/hamcrest-library/1.3/jar/4785a3c21320980282f9f33d0d1264a69040538f/hamcrest-library-1.3.jar" exported="true">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.hamcrest/hamcrest-library/1.3/javadoc/4324046c5f99f3dc91b5370899fa3ae65fd137d2/hamcrest-library-1.3-javadoc.jar!/"/>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.hamcrest/hamcrest-core/1.3/source/1dc37250fbc78e23a65a67fbbaf71d2e9cbc3c0b/hamcrest-core-1.3-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.hamcrest/hamcrest-core/1.3/jar/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar" exported="true">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.hamcrest/hamcrest-core/1.3/javadoc/ad09811315f1d4f5756986575b0ea16b99cd686f/hamcrest-core-1.3-javadoc.jar!/"/>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/net.sf.ehcache/ehcache-core/2.6.6/source/60432cdddb4e3e12a45236e492c25f89e719726e/ehcache-core-2.6.6-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/net.sf.ehcache/ehcache-core/2.6.6/jar/d034897c2afb0baf46f2623d4521798c2d2b3509/ehcache-core-2.6.6.jar" exported="true">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/net.sf.ehcache/ehcache-core/2.6.6/javadoc/cd6a26694a201113298ce0f72905d295f2bd4607/ehcache-core-2.6.6-javadoc.jar!/"/>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.webjars/bootstrap/2.3.2/source/5bb6c215b46bd9dc2b583f01ec987e5c6dfd7798/bootstrap-2.3.2-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.webjars/bootstrap/2.3.2/jar/5c0106448aeeac9186879ef385cd1606aec9dc69/bootstrap-2.3.2.jar" exported="true">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.webjars/bootstrap/2.3.2/javadoc/d096f1bd569d825508086f70624b9e821f3ba30e/bootstrap-2.3.2-javadoc.jar!/"/>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.webjars/jquery-ui/1.10.2/jar/67388d201cc7d1466750b196acd4fbb24ba2b166/jquery-ui-1.10.2.jar" exported="true">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.webjars/jquery-ui/1.10.2/javadoc/3f9bf42861aef000af2f0633e52b58b18058ba24/jquery-ui-1.10.2-javadoc.jar!/"/>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.webjars/jquery/2.0.3/jar/6a45c407472a59b425362f3d1507bc1530f6d6d4/jquery-2.0.3.jar" exported="true">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.aspectj/aspectjrt/1.7.3/source/ead58667889e1daa0d4bec8176a547b5cc33bd51/aspectjrt-1.7.3-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.aspectj/aspectjrt/1.7.3/jar/a1efcd30e7c12f0c0d5b0df412c7304c735035ed/aspectjrt-1.7.3.jar" exported="true">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.aspectj/aspectjrt/1.7.3/javadoc/e465a25d30408cbf25d2dd428e3ff6d529d1b64d/aspectjrt-1.7.3-javadoc.jar!/"/>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/javax.validation/validation-api/1.1.0.Final/source/7d49b53caed9bd81d172807c3e096d24f3c57090/validation-api-1.1.0.Final-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/javax.validation/validation-api/1.1.0.Final/jar/8613ae82954779d518631e05daa73a6a954817d5/validation-api-1.1.0.Final.jar" exported="true">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/javax.validation/validation-api/1.1.0.Final/javadoc/9f3d019c10d629fa8259af61ac83e88bb186c4e9/validation-api-1.1.0.Final-javadoc.jar!/"/>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.thymeleaf/thymeleaf-spring3/2.0.17/source/6bf613b66cebfd381a83edbc0004c9cb261caf8/thymeleaf-spring3-2.0.17-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.thymeleaf/thymeleaf-spring3/2.0.17/jar/36d390315aabec4cb487aa4b9880aca96aa6a27c/thymeleaf-spring3-2.0.17.jar" exported="true">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.thymeleaf/thymeleaf-spring3/2.0.17/javadoc/f0c6a611cc4350a54c49c403ad8c8b37bc137d28/thymeleaf-spring3-2.0.17-javadoc.jar!/"/>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/com.github.dandelion/datatables-jsp/0.8.14/source/860222a5007f485cd7b5befccffc3ffb197df5d5/datatables-jsp-0.8.14-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/com.github.dandelion/datatables-jsp/0.8.14/jar/5667f15a89862f5fde21c515f49c65db79ee7a0a/datatables-jsp-0.8.14.jar" exported="true">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/com.github.dandelion/datatables-jsp/0.8.14/javadoc/b7a9b9c314ffef2510c1b37570b981c0cc79a434/datatables-jsp-0.8.14-javadoc.jar!/"/>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/com.github.dandelion/datatables-export-itext/0.8.14/source/4fd243c8420d3e0dc2e97237f8f74a8feb1543dc/datatables-export-itext-0.8.14-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/com.github.dandelion/datatables-export-itext/0.8.14/jar/cf8fa6b5ae81fbc997ab635c5e113d51fb6285a0/datatables-export-itext-0.8.14.jar" exported="true">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/com.github.dandelion/datatables-export-itext/0.8.14/javadoc/29c3a71fd0907b7cff97ff097a5877a7a99dd64a/datatables-export-itext-0.8.14-javadoc.jar!/"/>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/com.github.dandelion/datatables-servlet2/0.8.14/source/87b9cc57621fae05d07efda76cdb2de75822afd8/datatables-servlet2-0.8.14-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/com.github.dandelion/datatables-servlet2/0.8.14/jar/6eb30e7cf0a9a2505a475140e346ad08903774a0/datatables-servlet2-0.8.14.jar" exported="true">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/com.github.dandelion/datatables-servlet2/0.8.14/javadoc/240dca13bb96f425d789c470911d2ee7a751afb0/datatables-servlet2-0.8.14-javadoc.jar!/"/>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/commons-pool/commons-pool/1.5.4/source/3e226507788e09f02eef641e868624fb823af6e6/commons-pool-1.5.4-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/commons-pool/commons-pool/1.5.4/jar/75b6e20c596ed2945a259cea26d7fadd298398e6/commons-pool-1.5.4.jar" exported="true">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/commons-pool/commons-pool/1.5.4/javadoc/4710cbbd141a42705af9b8831d7176b434630a6c/commons-pool-1.5.4-javadoc.jar!/"/>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.jadira.usertype/usertype.spi/3.1.0.CR1/source/dc87cad053b25c3c546411e3aa67d1762df897e5/usertype.spi-3.1.0.CR1-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.jadira.usertype/usertype.spi/3.1.0.CR1/jar/c7d26878d55ffbb369d22885a9be04502ad97eb9/usertype.spi-3.1.0.CR1.jar" exported="true">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.jadira.usertype/usertype.spi/3.1.0.CR1/javadoc/d69870e402c3e17af3a20b593fdca296c89b68fb/usertype.spi-3.1.0.CR1-javadoc.jar!/"/>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/dom4j/dom4j/1.6.1/source/a8e7149359255f43e0e5e3b1837948f9ed5861fb/dom4j-1.6.1-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/dom4j/dom4j/1.6.1/jar/5d3ccc056b6f056dbf0dddfdf43894b9065a8f94/dom4j-1.6.1.jar" exported="true">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.jboss.spec.javax.transaction/jboss-transaction-api_1.1_spec/1.0.1.Final/source/1cb80abf6f58f6091944060d50b1dbad050d1962/jboss-transaction-api_1.1_spec-1.0.1.Final-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.jboss.spec.javax.transaction/jboss-transaction-api_1.1_spec/1.0.1.Final/jar/18f0e1d42f010a8b53aa447bf274a706d5148852/jboss-transaction-api_1.1_spec-1.0.1.Final.jar" exported="true">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.jboss.spec.javax.transaction/jboss-transaction-api_1.1_spec/1.0.1.Final/javadoc/63d23d96416d964819ccb6752a2a5c90c42884c7/jboss-transaction-api_1.1_spec-1.0.1.Final-javadoc.jar!/"/>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.jboss.logging/jboss-logging/3.1.1.GA/source/e8fb8edacbcab714c4b8add89f5dd4ee9b4b7862/jboss-logging-3.1.1.GA-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.jboss.logging/jboss-logging/3.1.1.GA/jar/7fb1a7eb7ff1d15cac1802510fee65c7ca31a869/jboss-logging-3.1.1.GA.jar" exported="true">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.hibernate.common/hibernate-commons-annotations/4.0.2.Final/source/7ff871e9a45b6b271237cf236c76e5f50b1dc815/hibernate-commons-annotations-4.0.2.Final-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.hibernate.common/hibernate-commons-annotations/4.0.2.Final/jar/94edcc5572efb02e123cc9ef7ad7d0fa5f76cf/hibernate-commons-annotations-4.0.2.Final.jar" exported="true">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/antlr/antlr/2.7.7/jar/83cd2cd674a217ade95a4bb83a8a14f351f48bd0/antlr-2.7.7.jar" exported="true">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.javassist/javassist/3.16.1-GA/source/8f95b972246d57bca63f7a715af2aa9f61bf7f34/javassist-3.16.1-GA-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.javassist/javassist/3.16.1-GA/jar/315891b371395271977af518d4db5cee1a0bc9bf/javassist-3.16.1-GA.jar" exported="true">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.javassist/javassist/3.16.1-GA/javadoc/ffbcfd6145fec5fd5ddbdf7fc395acc42173390b/javassist-3.16.1-GA-javadoc.jar!/"/>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/com.fasterxml/classmate/0.8.0/source/445698e66b6d80d4347ce58fe7090209cc2dc023/classmate-0.8.0-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/com.fasterxml/classmate/0.8.0/bundle/27426d4fca7adcda34f536e32d6189566a2929f0/classmate-0.8.0.jar" exported="true">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/com.fasterxml/classmate/0.8.0/javadoc/b7991317a1ef5575b600a22290fbac76c6541ade/classmate-0.8.0-javadoc.jar!/"/>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework.data/spring-data-commons/1.5.0.RELEASE/source/b1f531df56be828796b408714efb014c95bf5a38/spring-data-commons-1.5.0.RELEASE-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework.data/spring-data-commons/1.5.0.RELEASE/jar/ef28d3ad8b1eadab15ddfc4b7a0eacfe3cc0206c/spring-data-commons-1.5.0.RELEASE.jar" exported="true">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework.data/spring-data-commons/1.5.0.RELEASE/javadoc/17d0ec390d12fbd5ab76ef9c6076c718047c6e3a/spring-data-commons-1.5.0.RELEASE-javadoc.jar!/"/>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-core/3.2.4.RELEASE/source/8cb78fb723a87900971ec8f523241b85bd750b3a/spring-core-3.2.4.RELEASE-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-core/3.2.4.RELEASE/jar/d36bed1dbca3f725bb5a4405c6115adc8c99d1a9/spring-core-3.2.4.RELEASE.jar" exported="true">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-core/3.2.4.RELEASE/javadoc/fc6f68f1a5ef276247ba32ab4f251c14d8e8c2f1/spring-core-3.2.4.RELEASE-javadoc.jar!/"/>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-beans/3.2.4.RELEASE/source/36107198eafecd4f6c20a6a31465d12fb820fed7/spring-beans-3.2.4.RELEASE-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-beans/3.2.4.RELEASE/jar/47b156296a5e9875faa7421b6e25b419a530f52d/spring-beans-3.2.4.RELEASE.jar" exported="true">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-beans/3.2.4.RELEASE/javadoc/efae17759a32bba5f4c2a667be23d7464b8d699e/spring-beans-3.2.4.RELEASE-javadoc.jar!/"/>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/aopalliance/aopalliance/1.0/source/4a4b6d692e17846a9f3da036438a7ac491d3c814/aopalliance-1.0-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/aopalliance/aopalliance/1.0/jar/235ba8b489512805ac13a8f9ea77a1ca5ebe3e8/aopalliance-1.0.jar" exported="true">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-expression/3.2.4.RELEASE/source/ee39551e01f5e2587320e75c6e63692c9e9f2d78/spring-expression-3.2.4.RELEASE-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-expression/3.2.4.RELEASE/jar/edde2efe828f5890f57aa153f55c5c994cf04489/spring-expression-3.2.4.RELEASE.jar" exported="true">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-expression/3.2.4.RELEASE/javadoc/36eb93c23ac6da962bd772f76db1129c49465fca/spring-expression-3.2.4.RELEASE-javadoc.jar!/"/>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-context/3.2.4.RELEASE/source/10e9dbd2d8ed0ab5c125aae8756e32c5174b46a2/spring-context-3.2.4.RELEASE-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-context/3.2.4.RELEASE/jar/4e6d5edcaeeed6cb332b90fbe3713f003d28188c/spring-context-3.2.4.RELEASE.jar" exported="true">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-context/3.2.4.RELEASE/javadoc/82473c321e1fea10190a19c25844f08a278356ec/spring-context-3.2.4.RELEASE-javadoc.jar!/"/>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-web/3.2.4.RELEASE/source/64a18f9ab380dff61216a1f9ec12773c2868ab2a/spring-web-3.2.4.RELEASE-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-web/3.2.4.RELEASE/jar/8daf0bd1172cb253d93611adadfa0462935d760d/spring-web-3.2.4.RELEASE.jar" exported="true">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-web/3.2.4.RELEASE/javadoc/fe24447dc206aadc92b5bd00561a2d6a2c175dc5/spring-web-3.2.4.RELEASE-javadoc.jar!/"/>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/ognl/ognl/3.0.6/source/8ef4c8207d5a87c99bd7a080aa04ef954aa00b44/ognl-3.0.6-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/ognl/ognl/3.0.6/jar/a3665cf8e3426686ee751790f3d1e1ec5705e9dc/ognl-3.0.6.jar" exported="true">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/ognl/ognl/3.0.6/javadoc/98799b909e185959dcbb26547e07606cf387ae9c/ognl-3.0.6-javadoc.jar!/"/>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.thymeleaf/thymeleaf/2.0.17/source/8305994e38dda0e331d8bc37716f1e06cc64b266/thymeleaf-2.0.17-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.thymeleaf/thymeleaf/2.0.17/jar/f2c25bfb00ada115cad3940310841b55f207834f/thymeleaf-2.0.17.jar" exported="true">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.thymeleaf/thymeleaf/2.0.17/javadoc/6c973fef66f213faca8f895aa0b12f5e12c4a36d/thymeleaf-2.0.17-javadoc.jar!/"/>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/com.googlecode.json-simple/json-simple/1.1.1/source/15bba08e3a239d54b68209c001f9c911559d2fed/json-simple-1.1.1-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/com.googlecode.json-simple/json-simple/1.1.1/bundle/c9ad4a0850ab676c5c64461a05ca524cdfff59f1/json-simple-1.1.1.jar" exported="true">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/com.googlecode.json-simple/json-simple/1.1.1/javadoc/8b6fa5f6ab016967297f38f974bb06a1c3d297df/json-simple-1.1.1-javadoc.jar!/"/>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/commons-lang/commons-lang/2.6/source/67313d715fbf0ea4fd0bdb69217fb77f807a8ce5/commons-lang-2.6-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/commons-lang/commons-lang/2.6/jar/ce1edb914c94ebc388f086c6827e8bdeec71ac2/commons-lang-2.6.jar" exported="true">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/commons-lang/commons-lang/2.6/javadoc/2519e88918ab30dcdee1b1b66f0a1014b0e055ec/commons-lang-2.6-javadoc.jar!/"/>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/commons-beanutils/commons-beanutils/1.8.3/source/170d03db4cb48be2f8f35ce3243d62c4b2204e2e/commons-beanutils-1.8.3-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/commons-beanutils/commons-beanutils/1.8.3/jar/686ef3410bcf4ab8ce7fd0b899e832aaba5facf7/commons-beanutils-1.8.3.jar" exported="true">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/commons-beanutils/commons-beanutils/1.8.3/javadoc/88e7e835a919e15e959aed02cd49c29193c36954/commons-beanutils-1.8.3-javadoc.jar!/"/>
 			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/com.github.dandelion/datatables-core/0.8.14/source/bce4ad68725db11975ec5c80ead071c9b7dfc06/datatables-core-0.8.14-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/com.github.dandelion/datatables-core/0.8.14/jar/e1150d54e79989ffd9678589315ac27d52d90bf/datatables-core-0.8.14.jar" exported="true">
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/aopalliance/aopalliance/1.0/jar/235ba8b489512805ac13a8f9ea77a1ca5ebe3e8/aopalliance-1.0.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/aopalliance/aopalliance/1.0/source/4a4b6d692e17846a9f3da036438a7ac491d3c814/aopalliance-1.0-sources.jar">
 		<attributes>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/com.github.dandelion/datatables-core/0.8.14/javadoc/b5f9611ee0dd358345087d475fd226805cde47f1/datatables-core-0.8.14-javadoc.jar!/"/>
 			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/ch.qos.logback/logback-access/1.0.9/source/f5ae62acbaa89fd9d97556f558e1ad8ae87d235f/logback-access-1.0.9-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/ch.qos.logback/logback-access/1.0.9/jar/9d58a6095a0ff64e11f0f94b5b41a556f3201d5c/logback-access-1.0.9.jar" exported="true">
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/ch.qos.logback/logback-access/1.0.9/jar/9d58a6095a0ff64e11f0f94b5b41a556f3201d5c/logback-access-1.0.9.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/ch.qos.logback/logback-access/1.0.9/source/f5ae62acbaa89fd9d97556f558e1ad8ae87d235f/logback-access-1.0.9-sources.jar">
 		<attributes>
 			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/ch.qos.logback/logback-access/1.0.9/javadoc/c41bb0cf7357e4f706f9a2a1857d038f32ee766b/logback-access-1.0.9-javadoc.jar!/"/>
 			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/com.itextpdf/itextpdf/5.3.4/source/3e143e2de2057e8c3b7bce4fa4087c0a6cbfcbc4/itextpdf-5.3.4-sources.jar" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/com.itextpdf/itextpdf/5.3.4/jar/7bdde266a5b26b62c38b2e05a74efbc45b0e0953/itextpdf-5.3.4.jar" exported="true">
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/ch.qos.logback/logback-classic/1.0.9/jar/258c3d8f956e7c8723f13fdea6b81e3d74201f68/logback-classic-1.0.9.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/ch.qos.logback/logback-classic/1.0.9/source/e898ae326277ae2fe7316935583d3f8c5df7aa9b/logback-classic-1.0.9-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/ch.qos.logback/logback-classic/1.0.9/javadoc/9fb09cd9283e7f6bddd0bad999ada68547aa5c30/logback-classic-1.0.9-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/ch.qos.logback/logback-core/1.0.9/jar/41916886a1df068ad1dfea9bcc649a7b8ea4553e/logback-core-1.0.9.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/ch.qos.logback/logback-core/1.0.9/source/4511629c49389adc6192811b987b6e6b1b3189eb/logback-core-1.0.9-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/ch.qos.logback/logback-core/1.0.9/javadoc/86452c6064d2d3d06cdb594de2e0d99e1e268790/logback-core-1.0.9-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/com.fasterxml/classmate/0.8.0/bundle/27426d4fca7adcda34f536e32d6189566a2929f0/classmate-0.8.0.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/com.fasterxml/classmate/0.8.0/source/445698e66b6d80d4347ce58fe7090209cc2dc023/classmate-0.8.0-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/com.fasterxml/classmate/0.8.0/javadoc/b7991317a1ef5575b600a22290fbac76c6541ade/classmate-0.8.0-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/com.github.dandelion/datatables-core/0.8.14/jar/e1150d54e79989ffd9678589315ac27d52d90bf/datatables-core-0.8.14.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/com.github.dandelion/datatables-core/0.8.14/source/bce4ad68725db11975ec5c80ead071c9b7dfc06/datatables-core-0.8.14-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/com.github.dandelion/datatables-core/0.8.14/javadoc/b5f9611ee0dd358345087d475fd226805cde47f1/datatables-core-0.8.14-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/com.github.dandelion/datatables-export-itext/0.8.14/jar/cf8fa6b5ae81fbc997ab635c5e113d51fb6285a0/datatables-export-itext-0.8.14.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/com.github.dandelion/datatables-export-itext/0.8.14/source/4fd243c8420d3e0dc2e97237f8f74a8feb1543dc/datatables-export-itext-0.8.14-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/com.github.dandelion/datatables-export-itext/0.8.14/javadoc/29c3a71fd0907b7cff97ff097a5877a7a99dd64a/datatables-export-itext-0.8.14-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/com.github.dandelion/datatables-jsp/0.8.14/jar/5667f15a89862f5fde21c515f49c65db79ee7a0a/datatables-jsp-0.8.14.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/com.github.dandelion/datatables-jsp/0.8.14/source/860222a5007f485cd7b5befccffc3ffb197df5d5/datatables-jsp-0.8.14-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/com.github.dandelion/datatables-jsp/0.8.14/javadoc/b7a9b9c314ffef2510c1b37570b981c0cc79a434/datatables-jsp-0.8.14-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/com.github.dandelion/datatables-servlet2/0.8.14/jar/6eb30e7cf0a9a2505a475140e346ad08903774a0/datatables-servlet2-0.8.14.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/com.github.dandelion/datatables-servlet2/0.8.14/source/87b9cc57621fae05d07efda76cdb2de75822afd8/datatables-servlet2-0.8.14-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/com.github.dandelion/datatables-servlet2/0.8.14/javadoc/240dca13bb96f425d789c470911d2ee7a751afb0/datatables-servlet2-0.8.14-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/com.googlecode.json-simple/json-simple/1.1.1/bundle/c9ad4a0850ab676c5c64461a05ca524cdfff59f1/json-simple-1.1.1.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/com.googlecode.json-simple/json-simple/1.1.1/source/15bba08e3a239d54b68209c001f9c911559d2fed/json-simple-1.1.1-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/com.googlecode.json-simple/json-simple/1.1.1/javadoc/8b6fa5f6ab016967297f38f974bb06a1c3d297df/json-simple-1.1.1-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/com.itextpdf/itextpdf/5.3.4/jar/7bdde266a5b26b62c38b2e05a74efbc45b0e0953/itextpdf-5.3.4.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/com.itextpdf/itextpdf/5.3.4/source/3e143e2de2057e8c3b7bce4fa4087c0a6cbfcbc4/itextpdf-5.3.4-sources.jar">
 		<attributes>
 			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/com.itextpdf/itextpdf/5.3.4/javadoc/e7e22881619f4ac396e8193e3e359ecabff5293c/itextpdf-5.3.4-javadoc.jar!/"/>
 			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
 		</attributes>
 	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/com.sun.xml.bind/jaxb-impl/2.2.7-b53/jar/25d93ccb10ac9073881c4d42d26e1b4765724d32/jaxb-impl-2.2.7-b53.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/com.sun.xml.bind/jaxb-impl/2.2.7-b53/source/75f7aefa239372dc9eae7dee636baa7ec9abacd1/jaxb-impl-2.2.7-b53-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/com.sun.xml.bind/jaxb-impl/2.2.7-b53/javadoc/c38764bb70771b9ed9e1a2f4dc97ab85242ef9ff/jaxb-impl-2.2.7-b53-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/commons-beanutils/commons-beanutils/1.8.3/jar/686ef3410bcf4ab8ce7fd0b899e832aaba5facf7/commons-beanutils-1.8.3.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/commons-beanutils/commons-beanutils/1.8.3/source/170d03db4cb48be2f8f35ce3243d62c4b2204e2e/commons-beanutils-1.8.3-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/commons-beanutils/commons-beanutils/1.8.3/javadoc/88e7e835a919e15e959aed02cd49c29193c36954/commons-beanutils-1.8.3-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/commons-dbcp/commons-dbcp/1.4/jar/30be73c965cc990b153a100aaaaafcf239f82d39/commons-dbcp-1.4.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/commons-dbcp/commons-dbcp/1.4/source/9b076ff231434d5403be6599a1347019b12c0def/commons-dbcp-1.4-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/commons-dbcp/commons-dbcp/1.4/javadoc/98bf7c8d5b026f6e3969259a36e813ac37432b3/commons-dbcp-1.4-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/commons-lang/commons-lang/2.6/jar/ce1edb914c94ebc388f086c6827e8bdeec71ac2/commons-lang-2.6.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/commons-lang/commons-lang/2.6/source/67313d715fbf0ea4fd0bdb69217fb77f807a8ce5/commons-lang-2.6-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/commons-lang/commons-lang/2.6/javadoc/2519e88918ab30dcdee1b1b66f0a1014b0e055ec/commons-lang-2.6-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/commons-pool/commons-pool/1.5.4/jar/75b6e20c596ed2945a259cea26d7fadd298398e6/commons-pool-1.5.4.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/commons-pool/commons-pool/1.5.4/source/3e226507788e09f02eef641e868624fb823af6e6/commons-pool-1.5.4-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/commons-pool/commons-pool/1.5.4/javadoc/4710cbbd141a42705af9b8831d7176b434630a6c/commons-pool-1.5.4-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/dom4j/dom4j/1.6.1/jar/5d3ccc056b6f056dbf0dddfdf43894b9065a8f94/dom4j-1.6.1.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/dom4j/dom4j/1.6.1/source/a8e7149359255f43e0e5e3b1837948f9ed5861fb/dom4j-1.6.1-sources.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/javax.el/el-api/2.2/jar/42971279cc8ba864462580c7fc2199fd5715ee7f/el-api-2.2.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/javax.el/el-api/2.2/source/710821a592290f5cc1e500f7514cb2fa3557e175/el-api-2.2-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/javax.el/el-api/2.2/javadoc/6fdb5966ee21e51394e88a8c8483cb6f60211d1c/el-api-2.2-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/javax.servlet/javax.servlet-api/3.0.1/jar/6bf0ebb7efd993e222fc1112377b5e92a13b38dd/javax.servlet-api-3.0.1.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/javax.servlet/javax.servlet-api/3.0.1/source/1952f91d84016a39e31346c9d18bd8c9c4a128a/javax.servlet-api-3.0.1-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/javax.servlet/javax.servlet-api/3.0.1/javadoc/3f57066b688f59cb998517a6e618bd53492f8c43/javax.servlet-api-3.0.1-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/javax.validation/validation-api/1.1.0.Final/jar/8613ae82954779d518631e05daa73a6a954817d5/validation-api-1.1.0.Final.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/javax.validation/validation-api/1.1.0.Final/source/7d49b53caed9bd81d172807c3e096d24f3c57090/validation-api-1.1.0.Final-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/javax.validation/validation-api/1.1.0.Final/javadoc/9f3d019c10d629fa8259af61ac83e88bb186c4e9/validation-api-1.1.0.Final-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/javax.xml.bind/jaxb-api/2.2.7/jar/2f51c4bb4724ea408096ee9100ff2827e07e5b7c/jaxb-api-2.2.7.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/javax.xml.bind/jaxb-api/2.2.7/source/5fb055d3773b48d759d43290f33e5533b25d2d62/jaxb-api-2.2.7-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/javax.xml.bind/jaxb-api/2.2.7/javadoc/94f2f45a47631d28bf61193889fe40b1dc49607d/jaxb-api-2.2.7-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/joda-time/joda-time-hibernate/1.3/jar/2b8773a3d2834d2c0901ac9b3c4a49b79b278f3a/joda-time-hibernate-1.3.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/joda-time/joda-time-hibernate/1.3/source/1c5f6500ff9bb4698563539ba88a7e071a268deb/joda-time-hibernate-1.3-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/joda-time/joda-time-hibernate/1.3/javadoc/e7a0eba11980dae43ae5932f4bc6f63ad796a931/joda-time-hibernate-1.3-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/joda-time/joda-time-jsptags/1.1.1/jar/da62400b7d48cec7714e3bd1fec2be94a7521db6/joda-time-jsptags-1.1.1.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/joda-time/joda-time-jsptags/1.1.1/source/2b9e2f68c7c2ba87c5c9bbb23044d15cdb82bb38/joda-time-jsptags-1.1.1-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/joda-time/joda-time-jsptags/1.1.1/javadoc/df9614735a8e870df219b94bc14b84d45ad8f52f/joda-time-jsptags-1.1.1-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/joda-time/joda-time/2.2/jar/a5f29a7acaddea3f4af307e8cf2d0cc82645fd7d/joda-time-2.2.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/joda-time/joda-time/2.2/source/ad622e3cfe39319ea53b183aa5615f96ff346584/joda-time-2.2-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/joda-time/joda-time/2.2/javadoc/c3293e04facc30556dc0b5a2367491dd2ec3ea5d/joda-time-2.2-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/junit/junit/4.11/jar/4e031bb61df09069aeb2bffb4019e7a5034a4ee0/junit-4.11.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/junit/junit/4.11/source/28e0ad201304e4a4abf999ca0570b7cffc352c3c/junit-4.11-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/junit/junit/4.11/javadoc/f3289e8097c0013b711d058b563064c3bded4423/junit-4.11-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/net.sf.ehcache/ehcache-core/2.6.6/jar/d034897c2afb0baf46f2623d4521798c2d2b3509/ehcache-core-2.6.6.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/net.sf.ehcache/ehcache-core/2.6.6/source/60432cdddb4e3e12a45236e492c25f89e719726e/ehcache-core-2.6.6-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/net.sf.ehcache/ehcache-core/2.6.6/javadoc/cd6a26694a201113298ce0f72905d295f2bd4607/ehcache-core-2.6.6-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/ognl/ognl/3.0.6/jar/a3665cf8e3426686ee751790f3d1e1ec5705e9dc/ognl-3.0.6.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/ognl/ognl/3.0.6/source/8ef4c8207d5a87c99bd7a080aa04ef954aa00b44/ognl-3.0.6-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/ognl/ognl/3.0.6/javadoc/98799b909e185959dcbb26547e07606cf387ae9c/ognl-3.0.6-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.aspectj/aspectjrt/1.7.3/jar/a1efcd30e7c12f0c0d5b0df412c7304c735035ed/aspectjrt-1.7.3.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.aspectj/aspectjrt/1.7.3/source/ead58667889e1daa0d4bec8176a547b5cc33bd51/aspectjrt-1.7.3-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.aspectj/aspectjrt/1.7.3/javadoc/e465a25d30408cbf25d2dd428e3ff6d529d1b64d/aspectjrt-1.7.3-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.aspectj/aspectjweaver/1.7.3/jar/4086c62f257ab411f28ef75b9c2608a71fadbd24/aspectjweaver-1.7.3.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.aspectj/aspectjweaver/1.7.3/source/9e1f532be97e6e7b218ceb35925b5d7d285c23bd/aspectjweaver-1.7.3-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.aspectj/aspectjweaver/1.7.3/javadoc/5b42dc9b90e8469c6a1d352798e5383d1486c41f/aspectjweaver-1.7.3-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.hamcrest/hamcrest-core/1.3/jar/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.hamcrest/hamcrest-core/1.3/source/1dc37250fbc78e23a65a67fbbaf71d2e9cbc3c0b/hamcrest-core-1.3-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.hamcrest/hamcrest-core/1.3/javadoc/ad09811315f1d4f5756986575b0ea16b99cd686f/hamcrest-core-1.3-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.hamcrest/hamcrest-library/1.3/jar/4785a3c21320980282f9f33d0d1264a69040538f/hamcrest-library-1.3.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.hamcrest/hamcrest-library/1.3/source/47a7ee46628ab7133129cd7cef1e92657bc275e/hamcrest-library-1.3-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.hamcrest/hamcrest-library/1.3/javadoc/4324046c5f99f3dc91b5370899fa3ae65fd137d2/hamcrest-library-1.3-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.hibernate.common/hibernate-commons-annotations/4.0.2.Final/jar/94edcc5572efb02e123cc9ef7ad7d0fa5f76cf/hibernate-commons-annotations-4.0.2.Final.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.hibernate.common/hibernate-commons-annotations/4.0.2.Final/source/7ff871e9a45b6b271237cf236c76e5f50b1dc815/hibernate-commons-annotations-4.0.2.Final-sources.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.hibernate.javax.persistence/hibernate-jpa-2.0-api/1.0.1.Final/jar/3306a165afa81938fc3d8a0948e891de9f6b192b/hibernate-jpa-2.0-api-1.0.1.Final.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.hibernate.javax.persistence/hibernate-jpa-2.0-api/1.0.1.Final/source/574f65373b46a038332eb1a14acc3142bd9e9810/hibernate-jpa-2.0-api-1.0.1.Final-sources.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.hibernate/hibernate-core/4.2.4.Final/jar/2aea736f6d92e4b2aba6a2f024f099388f6dfe9f/hibernate-core-4.2.4.Final.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.hibernate/hibernate-core/4.2.4.Final/source/2699d7a941cdf897ebacd5f75b67c6f6803ca3fc/hibernate-core-4.2.4.Final-sources.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.hibernate/hibernate-ehcache/4.2.4.Final/jar/9a294e056dcf6909409a175dcfbf84f1376662cd/hibernate-ehcache-4.2.4.Final.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.hibernate/hibernate-ehcache/4.2.4.Final/source/fcc8561bf09fca466f91372de719accae0617d27/hibernate-ehcache-4.2.4.Final-sources.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.hibernate/hibernate-entitymanager/4.2.4.Final/jar/a61252d25db35d7cd8ca401f1592f84af2d4828/hibernate-entitymanager-4.2.4.Final.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.hibernate/hibernate-entitymanager/4.2.4.Final/source/b932693e9a19695060f3712acd9285b4b261f2cc/hibernate-entitymanager-4.2.4.Final-sources.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.hibernate/hibernate-validator/5.0.1.Final/jar/542a45c94ff8a7551779caaaffd3857d643b9087/hibernate-validator-5.0.1.Final.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.hibernate/hibernate-validator/5.0.1.Final/source/5440d808b0c1fe401c2d54a01902f7f8e87a4d64/hibernate-validator-5.0.1.Final-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.hibernate/hibernate-validator/5.0.1.Final/javadoc/74abdc9399358d7b600fde1f0c5a7d4e18577a3d/hibernate-validator-5.0.1.Final-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.hsqldb/hsqldb/2.3.0/jar/93306187b1a782f2b929d12536022185487037d2/hsqldb-2.3.0.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.hsqldb/hsqldb/2.3.0/source/4e6837c5624b5e169fc5a103d0284995b16071a7/hsqldb-2.3.0-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.hsqldb/hsqldb/2.3.0/javadoc/78493677534c0296dc1001a219159992fae598d4/hsqldb-2.3.0-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.jadira.usertype/usertype.core/3.1.0.CR1/jar/167177b63a95ab32c8bc9dfe0d07781d1e219847/usertype.core-3.1.0.CR1.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.jadira.usertype/usertype.core/3.1.0.CR1/source/626ddbb50bb483e83b41cc5c0dadfa32f9593a64/usertype.core-3.1.0.CR1-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.jadira.usertype/usertype.core/3.1.0.CR1/javadoc/684a6375ceae0f291883ced58b31dea6902100b8/usertype.core-3.1.0.CR1-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.jadira.usertype/usertype.spi/3.1.0.CR1/jar/c7d26878d55ffbb369d22885a9be04502ad97eb9/usertype.spi-3.1.0.CR1.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.jadira.usertype/usertype.spi/3.1.0.CR1/source/dc87cad053b25c3c546411e3aa67d1762df897e5/usertype.spi-3.1.0.CR1-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.jadira.usertype/usertype.spi/3.1.0.CR1/javadoc/d69870e402c3e17af3a20b593fdca296c89b68fb/usertype.spi-3.1.0.CR1-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.javassist/javassist/3.16.1-GA/jar/315891b371395271977af518d4db5cee1a0bc9bf/javassist-3.16.1-GA.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.javassist/javassist/3.16.1-GA/source/8f95b972246d57bca63f7a715af2aa9f61bf7f34/javassist-3.16.1-GA-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.javassist/javassist/3.16.1-GA/javadoc/ffbcfd6145fec5fd5ddbdf7fc395acc42173390b/javassist-3.16.1-GA-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.jboss.logging/jboss-logging/3.1.1.GA/jar/7fb1a7eb7ff1d15cac1802510fee65c7ca31a869/jboss-logging-3.1.1.GA.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.jboss.logging/jboss-logging/3.1.1.GA/source/e8fb8edacbcab714c4b8add89f5dd4ee9b4b7862/jboss-logging-3.1.1.GA-sources.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.jboss.spec.javax.transaction/jboss-transaction-api_1.1_spec/1.0.1.Final/jar/18f0e1d42f010a8b53aa447bf274a706d5148852/jboss-transaction-api_1.1_spec-1.0.1.Final.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.jboss.spec.javax.transaction/jboss-transaction-api_1.1_spec/1.0.1.Final/source/1cb80abf6f58f6091944060d50b1dbad050d1962/jboss-transaction-api_1.1_spec-1.0.1.Final-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.jboss.spec.javax.transaction/jboss-transaction-api_1.1_spec/1.0.1.Final/javadoc/63d23d96416d964819ccb6752a2a5c90c42884c7/jboss-transaction-api_1.1_spec-1.0.1.Final-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.slf4j/jcl-over-slf4j/1.7.2/jar/358c500a1262d77e87167cbd0fdfb3ae8eca4fca/jcl-over-slf4j-1.7.2.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.slf4j/jcl-over-slf4j/1.7.2/source/1489c297b51dd0c35a1f917ae5985683e35b9df3/jcl-over-slf4j-1.7.2-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.slf4j/jcl-over-slf4j/1.7.2/javadoc/e7c899beba4fb65116eeaceb357449db94a0458c/jcl-over-slf4j-1.7.2-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.slf4j/jul-to-slf4j/1.7.2/jar/2ee8f3304632a2025d3c58aa3b63cd8842740f84/jul-to-slf4j-1.7.2.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.slf4j/jul-to-slf4j/1.7.2/source/69359a149cc33f605476f7520b205ab9da3e757a/jul-to-slf4j-1.7.2-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.slf4j/jul-to-slf4j/1.7.2/javadoc/1e1eb364f31fdf2a3ced95287fca77860909bc3a/jul-to-slf4j-1.7.2-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.slf4j/slf4j-api/1.7.2/jar/81d61b7f33ebeab314e07de0cc596f8e858d97/slf4j-api-1.7.2.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.slf4j/slf4j-api/1.7.2/source/58d38f68d4a867d4552ae27960bb348d7eaa1297/slf4j-api-1.7.2-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.slf4j/slf4j-api/1.7.2/javadoc/51d9af60bed42176be7a2e495d8e938cbd4060a3/slf4j-api-1.7.2-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework.data/spring-data-commons/1.5.0.RELEASE/jar/ef28d3ad8b1eadab15ddfc4b7a0eacfe3cc0206c/spring-data-commons-1.5.0.RELEASE.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework.data/spring-data-commons/1.5.0.RELEASE/source/b1f531df56be828796b408714efb014c95bf5a38/spring-data-commons-1.5.0.RELEASE-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework.data/spring-data-commons/1.5.0.RELEASE/javadoc/17d0ec390d12fbd5ab76ef9c6076c718047c6e3a/spring-data-commons-1.5.0.RELEASE-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework.data/spring-data-jpa/1.3.0.RELEASE/jar/a3b29dc1803c6ca08b96acb5477d45dd27a20afd/spring-data-jpa-1.3.0.RELEASE.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework.data/spring-data-jpa/1.3.0.RELEASE/source/49b44bb9c1b4f834823bc5b65319c2f607af8e05/spring-data-jpa-1.3.0.RELEASE-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework.data/spring-data-jpa/1.3.0.RELEASE/javadoc/efa881acdcc42834966e40a2314203e065446ac1/spring-data-jpa-1.3.0.RELEASE-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-aop/3.2.4.RELEASE/jar/773389e56c871ab558b87629b3e7c73fc4bf0ec/spring-aop-3.2.4.RELEASE.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-aop/3.2.4.RELEASE/source/c30c2ec8549bbaebf6825495116c7944699e1645/spring-aop-3.2.4.RELEASE-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-aop/3.2.4.RELEASE/javadoc/e82971b150b10d244b8b53e23fa9864b1e053c68/spring-aop-3.2.4.RELEASE-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-beans/3.2.4.RELEASE/jar/47b156296a5e9875faa7421b6e25b419a530f52d/spring-beans-3.2.4.RELEASE.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-beans/3.2.4.RELEASE/source/36107198eafecd4f6c20a6a31465d12fb820fed7/spring-beans-3.2.4.RELEASE-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-beans/3.2.4.RELEASE/javadoc/efae17759a32bba5f4c2a667be23d7464b8d699e/spring-beans-3.2.4.RELEASE-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-context-support/3.2.4.RELEASE/jar/bcb2341e76ef4621f2422b1f066fb34c42fad08d/spring-context-support-3.2.4.RELEASE.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-context-support/3.2.4.RELEASE/source/842c1fd4ab4960fee601de35a1acf553e3cdd8/spring-context-support-3.2.4.RELEASE-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-context-support/3.2.4.RELEASE/javadoc/399a3b91c25c3703602fc799a0f8de36d4a51a2a/spring-context-support-3.2.4.RELEASE-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-context/3.2.4.RELEASE/jar/4e6d5edcaeeed6cb332b90fbe3713f003d28188c/spring-context-3.2.4.RELEASE.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-context/3.2.4.RELEASE/source/10e9dbd2d8ed0ab5c125aae8756e32c5174b46a2/spring-context-3.2.4.RELEASE-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-context/3.2.4.RELEASE/javadoc/82473c321e1fea10190a19c25844f08a278356ec/spring-context-3.2.4.RELEASE-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-core/3.2.4.RELEASE/jar/d36bed1dbca3f725bb5a4405c6115adc8c99d1a9/spring-core-3.2.4.RELEASE.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-core/3.2.4.RELEASE/source/8cb78fb723a87900971ec8f523241b85bd750b3a/spring-core-3.2.4.RELEASE-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-core/3.2.4.RELEASE/javadoc/fc6f68f1a5ef276247ba32ab4f251c14d8e8c2f1/spring-core-3.2.4.RELEASE-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-expression/3.2.4.RELEASE/jar/edde2efe828f5890f57aa153f55c5c994cf04489/spring-expression-3.2.4.RELEASE.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-expression/3.2.4.RELEASE/source/ee39551e01f5e2587320e75c6e63692c9e9f2d78/spring-expression-3.2.4.RELEASE-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-expression/3.2.4.RELEASE/javadoc/36eb93c23ac6da962bd772f76db1129c49465fca/spring-expression-3.2.4.RELEASE-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-jdbc/3.2.4.RELEASE/jar/b0102696b834ebd75292137c0d9348da42c6bf96/spring-jdbc-3.2.4.RELEASE.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-jdbc/3.2.4.RELEASE/source/b5bc68ed416985b08a04c6756a6ccd3f9d6d74ee/spring-jdbc-3.2.4.RELEASE-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-jdbc/3.2.4.RELEASE/javadoc/57d86d4099c26ec982276e5270c3ea1ec92575a/spring-jdbc-3.2.4.RELEASE-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-jms/3.2.4.RELEASE/jar/9c88ef8663cb617ca972bb06391a2968e6de5ea9/spring-jms-3.2.4.RELEASE.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-jms/3.2.4.RELEASE/source/76c3ada4628bd6eaaa71a46b3e5215712a4d66d4/spring-jms-3.2.4.RELEASE-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-jms/3.2.4.RELEASE/javadoc/879a69c6421931e8a448a13fc6973400eea33a40/spring-jms-3.2.4.RELEASE-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-orm/3.2.4.RELEASE/jar/acaf0ce231bbb0de687d3ba6a9a495167b9cea98/spring-orm-3.2.4.RELEASE.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-orm/3.2.4.RELEASE/source/7d15b49e4b5d32489739ae5001f92aecaf098bb/spring-orm-3.2.4.RELEASE-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-orm/3.2.4.RELEASE/javadoc/fd5dab63d9b53165be172986ac86c57e632febeb/spring-orm-3.2.4.RELEASE-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-oxm/3.2.4.RELEASE/jar/1de9e0537d7ea233668540577e72d86ff6df6d8b/spring-oxm-3.2.4.RELEASE.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-oxm/3.2.4.RELEASE/source/c0f0fea94825096b0ef3b10935d479230f791e40/spring-oxm-3.2.4.RELEASE-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-oxm/3.2.4.RELEASE/javadoc/2cf8a525d8bf595e99b5efba7e5ab99c9b4b0518/spring-oxm-3.2.4.RELEASE-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-test/3.2.4.RELEASE/jar/a3d08624ed6e54c2492ca866f7423215c45b4dd0/spring-test-3.2.4.RELEASE.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-test/3.2.4.RELEASE/source/a9375fe9c294797fc5a7109fa6e195acfbbd8f5a/spring-test-3.2.4.RELEASE-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-test/3.2.4.RELEASE/javadoc/4fc31bc16486cda4bb97133bb95c001b3b12fdf6/spring-test-3.2.4.RELEASE-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-tx/3.2.4.RELEASE/jar/6da00a9bc5ee808211dafc2f642129476a0d63cb/spring-tx-3.2.4.RELEASE.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-tx/3.2.4.RELEASE/source/287b228644a73c337cac981e4728a075f459eee7/spring-tx-3.2.4.RELEASE-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-tx/3.2.4.RELEASE/javadoc/1da4b3bae275e2770b6d259351cc943fb108d4f0/spring-tx-3.2.4.RELEASE-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-web/3.2.4.RELEASE/jar/8daf0bd1172cb253d93611adadfa0462935d760d/spring-web-3.2.4.RELEASE.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-web/3.2.4.RELEASE/source/64a18f9ab380dff61216a1f9ec12773c2868ab2a/spring-web-3.2.4.RELEASE-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-web/3.2.4.RELEASE/javadoc/fe24447dc206aadc92b5bd00561a2d6a2c175dc5/spring-web-3.2.4.RELEASE-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-webmvc/3.2.4.RELEASE/jar/99c0303b36c421b3c43dfc2ae55e46fc81dbaefc/spring-webmvc-3.2.4.RELEASE.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-webmvc/3.2.4.RELEASE/source/a0784984bc522a5cee4fba609d510abf6a9cf1cd/spring-webmvc-3.2.4.RELEASE-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.springframework/spring-webmvc/3.2.4.RELEASE/javadoc/a5ee89dc0a7bf3a955f8bd709ba4b16f7d5c9003/spring-webmvc-3.2.4.RELEASE-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.thymeleaf/thymeleaf-spring3/2.0.17/jar/36d390315aabec4cb487aa4b9880aca96aa6a27c/thymeleaf-spring3-2.0.17.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.thymeleaf/thymeleaf-spring3/2.0.17/source/6bf613b66cebfd381a83edbc0004c9cb261caf8/thymeleaf-spring3-2.0.17-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.thymeleaf/thymeleaf-spring3/2.0.17/javadoc/f0c6a611cc4350a54c49c403ad8c8b37bc137d28/thymeleaf-spring3-2.0.17-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.thymeleaf/thymeleaf/2.0.17/jar/f2c25bfb00ada115cad3940310841b55f207834f/thymeleaf-2.0.17.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.thymeleaf/thymeleaf/2.0.17/source/8305994e38dda0e331d8bc37716f1e06cc64b266/thymeleaf-2.0.17-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.thymeleaf/thymeleaf/2.0.17/javadoc/6c973fef66f213faca8f895aa0b12f5e12c4a36d/thymeleaf-2.0.17-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.webjars/bootstrap/2.3.2/jar/5c0106448aeeac9186879ef385cd1606aec9dc69/bootstrap-2.3.2.jar" sourcepath="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.webjars/bootstrap/2.3.2/source/5bb6c215b46bd9dc2b583f01ec987e5c6dfd7798/bootstrap-2.3.2-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.webjars/bootstrap/2.3.2/javadoc/d096f1bd569d825508086f70624b9e821f3ba30e/bootstrap-2.3.2-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.webjars/jquery-ui/1.10.2/jar/67388d201cc7d1466750b196acd4fbb24ba2b166/jquery-ui-1.10.2.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.webjars/jquery-ui/1.10.2/javadoc/3f9bf42861aef000af2f0633e52b58b18058ba24/jquery-ui-1.10.2-javadoc.jar!/"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/org.webjars/jquery/2.0.3/jar/6a45c407472a59b425362f3d1507bc1530f6d6d4/jquery-2.0.3.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry exported="true" kind="con" path="org.springsource.ide.eclipse.gradle.classpathcontainer">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin"/>
 </classpath>
