@@ -171,7 +171,10 @@ dependencies {
 //	web("javax.servlet.jsp.jstl:jstl-api:${jstl_version}")
 	web("org.thymeleaf:thymeleaf-spring3:${thymeleaf_version}")
 //	web("org.glassfish.web:jstl-impl:${jstl_version}")
-	web("com.github.dandelion:datatables-jsp:${dandelion_datatables_version}")
+	web("com.github.dandelion:datatables-jsp:${dandelion_datatables_version}") {
+		exclude group: "ch.qos.logback", module: "logback-classic"
+		exclude group: "ch.qos.logback", module: "logback-core"
+	}
 	web("com.github.dandelion:datatables-export-itext:${dandelion_datatables_version}")
 	web("com.github.dandelion:datatables-servlet2:${dandelion_datatables_version}")
 
@@ -224,12 +227,18 @@ allprojects {
 
 sourceCompatibility = "${java_version}"
 targetCompatibility = "${java_version}"
-[compileJava, compileTestJava]*.options*.encoding = "${project_build_sourceEncoding}"
+[compileJava, compileTestJava, compileIntegrationTestJava]*.options*.encoding = "${project_build_sourceEncoding}"
 //compileJava.options.fork = true
 //compileJava.options.forkOptions.executable = "C:\\Program Files\\Java\\jdk1.6.0_43\\bin\\javac.exe"
 
 processTestResources {
 	from(sourceSets.test.java.srcDirs) {
+		include '**/*.xml'
+	}
+}
+
+processIntegrationTestResources {
+	from(sourceSets.integrationTest.java.srcDirs) {
 		include '**/*.xml'
 	}
 }
