@@ -12,6 +12,8 @@ import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
@@ -19,7 +21,6 @@ import org.springframework.test.web.servlet.MockMvc;
 
 import com.anazzubair.techy.business.model.User;
 import com.anazzubair.techy.business.service.UserService;
-import com.anazzubair.techy.utility.IntegrationTestUtility;
 import com.anazzubair.techy.web.config.RootApplicationContext;
 import com.anazzubair.techy.web.config.ServletApplicationContext;
 
@@ -41,6 +42,8 @@ public class IndexControllerTests {
 		MockitoAnnotations.initMocks(this);
 		this.mockMvc = standaloneSetup(controller).build();
 	}
+	
+	final static Logger logger = LoggerFactory.getLogger(IndexControllerTests.class);
 
 	@Test
 	public void index() throws Exception {
