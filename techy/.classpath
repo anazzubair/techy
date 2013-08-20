@@ -4,6 +4,8 @@
 	<classpathentry kind="src" path="src/main/resources"/>
 	<classpathentry kind="src" path="src/test/java"/>
 	<classpathentry kind="src" path="src/test/resources"/>
+	<classpathentry kind="src" path="src/integrationTest/java"/>
+	<classpathentry kind="src" path="src/integrationTest/resources"/>
 	<classpathentry exported="true" kind="lib" path="C:/Users/catalyst.op/.gradle/caches/artifacts-26/filestore/antlr/antlr/2.7.7/jar/83cd2cd674a217ade95a4bb83a8a14f351f48bd0/antlr-2.7.7.jar">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
