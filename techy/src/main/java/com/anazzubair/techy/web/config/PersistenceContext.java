@@ -14,8 +14,10 @@ import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.transaction.PlatformTransactionManager;
 
+import com.anazzubair.techy.business.repository.RepositoryPackageMarkerInterface;
+
 @Configuration
-@EnableJpaRepositories(basePackages = { "com.anazzubair.techy.business.repository" })
+@EnableJpaRepositories(basePackageClasses = { RepositoryPackageMarkerInterface.class })
 public class PersistenceContext {
 
 	@Bean

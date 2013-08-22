@@ -11,9 +11,11 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
+import com.anazzubair.techy.web.controller.ControllerPackageMarkerInterface;
+
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages = { "com.anazzubair.techy.web.controller" })
+@ComponentScan(basePackageClasses = { ControllerPackageMarkerInterface.class })
 @Import({ThymeleafConfig.class})
 @EnableTransactionManagement
 public class ServletApplicationContext extends WebMvcConfigurerAdapter {

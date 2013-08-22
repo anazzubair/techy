@@ -5,8 +5,10 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
+import com.anazzubair.techy.business.service.ServicePackageMarkerInterface;
+
 @Configuration
-@ComponentScan(basePackages = { "com.anazzubair.techy.business.service" })
+@ComponentScan(basePackageClasses = { ServicePackageMarkerInterface.class })
 @Import(PersistenceContext.class)
 @EnableTransactionManagement
 public class RootApplicationContext {
