@@ -5,9 +5,80 @@ apply plugin: 'eclipse-wtp'
 eclipse.classpath.downloadJavadoc = true
 eclipse.classpath.downloadSources = true
 
-repositories {
-	mavenCentral() 	
+repositories { mavenCentral() 	 }
+
+buildscript {
+	repositories { mavenLocal() }
+	dependencies { classpath "org.vbossica:gradle-glassfish4-plugin:5.0-SNAPSHOT" }
 }
+
+
+apply plugin: 'glassfish4'
+
+glassfish4 {
+	asadminExec = file('C:/glassfish4/glassfish/bin/asadmin.bat')
+	domainDir = file('C:/glassfish4/glassfish/domains/others')
+	domainName = "others"
+}
+
+configurations {
+	web
+	database
+	tools
+	date
+	spring
+	hibernate
+	log
+	querydsl
+
+	compile.extendsFrom spring, web, date, tools, hibernate, querydsl
+	runtime.extendsFrom database, log
+
+	integrationTestCompile.extendsFrom testCompile
+	integrationTestRuntime.extendsFrom integrationTestCompile, testRuntime
+}
+
+sourceSets {
+	integrationTest {
+		java.srcDir file('src/integrationTest/java')
+		resources.srcDir file('src/integrationTest/resources')
+		compileClasspath = sourceSets.main.output + sourceSets.test.output + configurations.integrationTestCompile
+		runtimeClasspath = output + compileClasspath + configurations.integrationTestRuntime
+	}
+
+	generated {
+		java.srcDirs = ['src/main/generated']
+	}
+}
+
+task printStuff {
+	for(SourceSet s : sourceSets) {
+		println s.name + ":" + s.class
+	}
+}
+
+task integrationTest(type: Test, dependsOn: jar) {
+	testClassesDir = sourceSets.integrationTest.output.classesDir
+	classpath = sourceSets.integrationTest.runtimeClasspath
+}
+
+task generateQueryDSL(type: JavaCompile, group: 'build', description: 'Generates the QueryDSL query types') {
+	source = sourceSets.main.java
+	classpath = configurations.compile + configurations.querydsl
+	options.compilerArgs = [
+		"-proc:only",
+		"-processor",
+		"com.mysema.query.apt.jpa.JPAAnnotationProcessor"
+	]
+	destinationDir = sourceSets.generated.java.srcDirs.iterator().next()
+	dependencyCacheDir = compileJava.dependencyCacheDir
+}
+
+compileJava {
+	dependsOn generateQueryDSL
+	source generateQueryDSL.destinationDir
+}
+
 
 ext {
 	//Generic Properties
@@ -33,7 +104,7 @@ ext {
 	//Hibernate
 	hibernate_version = '4.2.4.Final'
 	hibernate_jpa_version = '1.0.1.Final'
-	
+
 	//QueryDSL
 	query_dsl_version = '3.2.2'
 
@@ -74,97 +145,12 @@ ext {
 	dandelion_datatables_version = '0.8.14'
 }
 
-buildscript {
-	repositories { mavenLocal() }
-	dependencies { classpath "org.vbossica:gradle-glassfish4-plugin:4.0-SNAPSHOT" }
-}
-
-
-apply plugin: 'glassfish4'
-
-glassfish4 {
-	asadminExec = file('C:/glassfish4/glassfish/bin/asadmin.bat')
-	domainDir = file('C:/glassfish4/glassfish/domains/others')
-	domainName = "others"
-	
-}
-
-configurations.all {
-	resolutionStrategy {
-		eachDependency { details ->
-			if (!details.requested.version) {
-				if (details.requested.group == 'org.springframework') {
-					details.useVersion "${spring_framework_version}"
-				}
-				else if (details.requested.group == 'org.hibernate') {
-					details.useVersion "${hibernate_version}"
-				}
-			}
-		}
-	}
-}
-
-configurations {
-	web
-	database
-	tools
-	date
-	spring
-	hibernate
-	log
-	querydsl
-
-	compile.extendsFrom spring, web, date, tools, hibernate, querydsl
-	runtime.extendsFrom database, log
-	
-	integrationTestCompile {
-		extendsFrom testCompile
-	}
-	integrationTestRuntime {
-		extendsFrom integrationTestCompile, testRuntime
-	}
-}
-
-sourceSets {
-	integrationTest {
-		java.srcDir file('src/integrationTest/java')
-		resources.srcDir file('src/integrationTest/resources')
-		compileClasspath = sourceSets.main.output + sourceSets.test.output + configurations.integrationTestCompile
-		runtimeClasspath = output + compileClasspath + configurations.integrationTestRuntime
-	}
-	
-	generated {
-		java.srcDirs = ['src/main/generated']
-	}
-}
-
-task integrationTest(type: Test, dependsOn: jar) {
-	testClassesDir = sourceSets.integrationTest.output.classesDir
-	classpath = sourceSets.integrationTest.runtimeClasspath
-}
-
-task generateQueryDSL(type: JavaCompile, group: 'build', description: 'Generates the QueryDSL query types') {
-         source = sourceSets.main.java
-         classpath = configurations.compile + configurations.querydsl
-         options.compilerArgs = [
-                "-proc:only",
-                "-processor", "com.mysema.query.apt.jpa.JPAAnnotationProcessor"
-         ]
-         destinationDir = sourceSets.generated.java.srcDirs.iterator().next()
-		 dependencyCacheDir = compileJava.dependencyCacheDir
-}
-
-compileJava {
-	dependsOn generateQueryDSL
-	source generateQueryDSL.destinationDir
-}
-
 
 dependencies {
 	spring("org.springframework.data:spring-data-jpa:${spring_data_jpa_version}") {
 		exclude group: 'org.springframework', module: '*'
 	}
-	
+
 	spring("org.springframework:spring-jdbc") {
 		exclude group: 'commons-logging', module: 'commons-logging'
 	}
@@ -191,10 +177,10 @@ dependencies {
 	hibernate("org.hibernate:hibernate-ehcache")
 
 	web("javax.validation:validation-api:${validation_version}")
-//	web("javax.servlet:jstl:${jstl_version}")
-//	web("javax.servlet.jsp.jstl:jstl-api:${jstl_version}")
+	//	web("javax.servlet:jstl:${jstl_version}")
+	//	web("javax.servlet.jsp.jstl:jstl-api:${jstl_version}")
 	web("org.thymeleaf:thymeleaf-spring3:${thymeleaf_version}")
-//	web("org.glassfish.web:jstl-impl:${jstl_version}")
+	//	web("org.glassfish.web:jstl-impl:${jstl_version}")
 	web("com.github.dandelion:datatables-jsp:${dandelion_datatables_version}") {
 		exclude group: "ch.qos.logback", module: "logback-classic"
 		exclude group: "ch.qos.logback", module: "logback-core"
@@ -210,7 +196,7 @@ dependencies {
 	tools("org.webjars:jquery:${webjars_jquery_version}")
 	tools("org.aspectj:aspectjrt:${aspectj_version}")
 	tools("com.mysema.querydsl:querydsl-jpa:${query_dsl_version}")
-	
+
 	querydsl("com.mysema.querydsl:querydsl-apt:${query_dsl_version}")
 
 	date("org.jadira.usertype:usertype.core:${jadira_usertype_core_version}")
@@ -224,7 +210,7 @@ dependencies {
 
 	providedCompile("javax.el:el-api:${javax_el_version}")
 	providedCompile("javax.servlet:javax.servlet-api:${servlet_version}")
-//	providedCompile("javax.servlet.jsp:jsp-api:${jsp_version}")
+	//	providedCompile("javax.servlet.jsp:jsp-api:${jsp_version}")
 	providedCompile("javax.xml.bind:jaxb-api:${jaxb_api_version}")
 	providedCompile("com.sun.xml.bind:jaxb-impl:${jaxb_impl_version}")
 
@@ -243,6 +229,21 @@ dependencies {
 
 }
 
+configurations.all {
+	resolutionStrategy {
+		eachDependency { details ->
+			if (!details.requested.version) {
+				if (details.requested.group == 'org.springframework') {
+					details.useVersion "${spring_framework_version}"
+				}
+				else if (details.requested.group == 'org.hibernate') {
+					details.useVersion "${hibernate_version}"
+				}
+			}
+		}
+	}
+}
+
 allprojects {
 	afterEvaluate {
 		configurations.all { conf ->
@@ -254,20 +255,20 @@ allprojects {
 
 sourceCompatibility = "${java_version}"
 targetCompatibility = "${java_version}"
-[compileJava, compileTestJava, compileIntegrationTestJava]*.options*.encoding = "${project_build_sourceEncoding}"
+[
+	compileJava,
+	compileTestJava,
+	compileIntegrationTestJava
+]*.options*.encoding = "${project_build_sourceEncoding}"
 //compileJava.options.fork = true
 //compileJava.options.forkOptions.executable = "C:\\Program Files\\Java\\jdk1.6.0_43\\bin\\javac.exe"
 
 processTestResources {
-	from(sourceSets.test.java.srcDirs) {
-		include '**/*.xml'
-	}
+	from(sourceSets.test.java.srcDirs) { include '**/*.xml' }
 }
 
 processIntegrationTestResources {
-	from(sourceSets.integrationTest.java.srcDirs) {
-		include '**/*.xml'
-	}
+	from(sourceSets.integrationTest.java.srcDirs) { include '**/*.xml' }
 }
 
 war.baseName = 'techy'
