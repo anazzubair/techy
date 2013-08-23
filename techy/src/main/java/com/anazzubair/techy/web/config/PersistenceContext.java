@@ -5,6 +5,7 @@ import java.util.Properties;
 import javax.sql.DataSource;
 
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
@@ -18,6 +19,7 @@ import com.anazzubair.techy.business.repository.RepositoryPackageMarkerInterface
 
 @Configuration
 @EnableJpaRepositories(basePackageClasses = { RepositoryPackageMarkerInterface.class })
+@ComponentScan(basePackageClasses = { RepositoryPackageMarkerInterface.class })
 public class PersistenceContext {
 
 	@Bean

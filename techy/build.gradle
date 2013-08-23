@@ -16,7 +16,7 @@ ext {
 	project_reporting_outputEncoding = 'UTF-8'
 
 	//Spring
-	spring_data_jpa_version = '1.3.0.RELEASE'
+	spring_data_jpa_version = '1.3.4.RELEASE'
 	spring_framework_version = '3.2.4.RELEASE'
 
 	//Thymeleaf
@@ -33,6 +33,9 @@ ext {
 	//Hibernate
 	hibernate_version = '4.2.4.Final'
 	hibernate_jpa_version = '1.0.1.Final'
+	
+	//QueryDSL
+	query_dsl_version = '3.2.2'
 
 	//Bean Validation
 	validation_version = '1.1.0.Final'
@@ -109,8 +112,9 @@ configurations {
 	spring
 	hibernate
 	log
+	querydsl
 
-	compile.extendsFrom spring, web, date, tools, hibernate
+	compile.extendsFrom spring, web, date, tools, hibernate, querydsl
 	runtime.extendsFrom database, log
 	
 	integrationTestCompile {
@@ -128,11 +132,31 @@ sourceSets {
 		compileClasspath = sourceSets.main.output + sourceSets.test.output + configurations.integrationTestCompile
 		runtimeClasspath = output + compileClasspath + configurations.integrationTestRuntime
 	}
+	
+	generated {
+		java.srcDirs = ['src/main/generated']
+	}
 }
 
 task integrationTest(type: Test, dependsOn: jar) {
 	testClassesDir = sourceSets.integrationTest.output.classesDir
 	classpath = sourceSets.integrationTest.runtimeClasspath
+}
+
+task generateQueryDSL(type: JavaCompile, group: 'build', description: 'Generates the QueryDSL query types') {
+         source = sourceSets.main.java
+         classpath = configurations.compile + configurations.querydsl
+         options.compilerArgs = [
+                "-proc:only",
+                "-processor", "com.mysema.query.apt.jpa.JPAAnnotationProcessor"
+         ]
+         destinationDir = sourceSets.generated.java.srcDirs.iterator().next()
+		 dependencyCacheDir = compileJava.dependencyCacheDir
+}
+
+compileJava {
+	dependsOn generateQueryDSL
+	source generateQueryDSL.destinationDir
 }
 
 
@@ -185,6 +209,9 @@ dependencies {
 	tools("org.webjars:jquery-ui:${webjars_jquery_ui_version}")
 	tools("org.webjars:jquery:${webjars_jquery_version}")
 	tools("org.aspectj:aspectjrt:${aspectj_version}")
+	tools("com.mysema.querydsl:querydsl-jpa:${query_dsl_version}")
+	
+	querydsl("com.mysema.querydsl:querydsl-apt:${query_dsl_version}")
 
 	date("org.jadira.usertype:usertype.core:${jadira_usertype_core_version}")
 	date("joda-time:joda-time:${jodatime_version}")

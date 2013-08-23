@@ -12,5 +12,5 @@ import com.anazzubair.techy.business.service.ServicePackageMarkerInterface;
 @Import(PersistenceContext.class)
 @EnableTransactionManagement
 public class RootApplicationContext {
-
+	
 }

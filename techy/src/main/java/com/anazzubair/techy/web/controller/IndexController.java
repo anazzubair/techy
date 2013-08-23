@@ -1,8 +1,9 @@
 package com.anazzubair.techy.web.controller;
 
+import javax.annotation.Resource;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
@@ -19,7 +20,7 @@ public class IndexController {
 	
 	private final static Logger logger = LoggerFactory.getLogger(IndexController.class);
 	
-	@Autowired
+	@Resource(name="QueryDslUserService")
 	private UserService userService;
 	
 	@RequestMapping(value={"/", "/index.html"})

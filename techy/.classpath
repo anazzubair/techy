@@ -2,6 +2,7 @@
 <classpath>
 	<classpathentry kind="src" path="src/integrationTest/java"/>
 	<classpathentry kind="src" path="src/integrationTest/resources"/>
+	<classpathentry kind="src" path="src/main/generated"/>
 	<classpathentry kind="src" path="src/main/java"/>
 	<classpathentry kind="src" path="src/main/resources"/>
 	<classpathentry kind="src" path="src/test/java"/>
