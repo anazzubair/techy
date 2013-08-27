@@ -67,6 +67,7 @@ public class PersistenceContext {
 						"org.hibernate.dialect.PostgreSQLDialect");
 				setProperty("hibernate.show_sql", "true");
 				setProperty("hibernate.format_sql", "true");
+				setProperty("hibernate.id.new_generator_mappings", "true");
 				//setProperty("hibernate.default_schema", "public");
 //				setProperty("hibernate.ejb.naming_strategy",
 //						"org.hibernate.cfg.ImprovedNamingStrategy");
