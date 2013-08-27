@@ -47,9 +47,8 @@ public class IndexControllerTests {
 	@Test
 	public void index() throws Exception {
 		
-		User expectedUser = new User();
 		final String expectedUsername = "expected user";
-		expectedUser.setUsername(expectedUsername);
+		User expectedUser = new User(expectedUsername);
 		
 		when(userService.getMeAUser()).thenReturn(expectedUser);
 		mockMvc.perform(get("/index.html"))
