@@ -52,9 +52,8 @@ sourceSets {
 }
 
 task printStuff {
-	for(SourceSet s : sourceSets) {
-		println s.name + ":" + s.class
-	}
+	FileTree tree = fileTree(dir: 'src/main/java')
+	tree.visit {element -> println "$element.relativePath => $element.file" }
 }
 
 task integrationTest(type: Test, dependsOn: jar) {
@@ -74,10 +73,8 @@ task generateQueryDSL(type: JavaCompile, group: 'build', description: 'Generates
 	dependencyCacheDir = compileJava.dependencyCacheDir
 }
 
-compileJava {
-	dependsOn generateQueryDSL
-	source generateQueryDSL.destinationDir
-}
+compileJava.dependsOn generateQueryDSL
+compileJava.source generateQueryDSL.destinationDir
 
 
 ext {
