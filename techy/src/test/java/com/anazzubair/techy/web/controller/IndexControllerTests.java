@@ -55,5 +55,8 @@ public class IndexControllerTests {
 				.andExpect(status().isOk())
 				.andExpect(view().name("index"))
 				.andExpect(model().attribute("user", expectedUser));
+		
+		verify(userService, times(1)).getMeAUser();
+		verifyNoMoreInteractions(userService);
 	}
 }
