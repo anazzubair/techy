@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.anazzubair.techy.business.model.QUser;
 import com.anazzubair.techy.business.model.User;
 import com.anazzubair.techy.business.repository.UserRepository;
 
@@ -18,5 +19,11 @@ public class RepositoryUserService implements UserService {
 	@Override
 	public User getMeAUser(){
 		return userRepository.findOne(1L);
+	}
+	
+	@Override
+	public User findUserByUsername(String username) {
+		QUser user = QUser.user;
+		return userRepository.findAll(user.username.eq(username)).iterator().next();
 	}
 }
