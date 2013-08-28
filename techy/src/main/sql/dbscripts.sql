@@ -1,19 +1,26 @@
-CREATE TABLE Users
+-- Table: users
+
+DROP TABLE IF EXISTS users;
+
+CREATE TABLE users
 (
-  Id bigserial,
-  Username text,
-  FirstName text,
-  MiddleName text,
-  LastName text,
-  CONSTRAINT User_PK PRIMARY KEY (Id),
-  CONSTRAINT User_Username_UK UNIQUE (Username)
+  id bigserial NOT NULL,
+  username text,
+  firstname text,
+  middlename text,
+  lastname text,
+  isactive character(1) NOT NULL DEFAULT 'N'::bpchar,
+  createdon timestamp without time zone NOT NULL DEFAULT now(),
+  createdby bigint NOT NULL,
+  modifiedon timestamp without time zone NOT NULL DEFAULT now(),
+  modifiedby bigint NOT NULL,
+  rowversion bigint NOT NULL DEFAULT 0,
+  CONSTRAINT user_pk PRIMARY KEY (id),
+  CONSTRAINT user_username_uk UNIQUE (username)
 )
 WITH (
   OIDS=FALSE
 );
-ALTER TABLE Users
+ALTER TABLE users
   OWNER TO anaz;
-  
-INSERT INTO users(
-            username, firstname, middlename, lastname)
-    VALUES ('hanaanaz', 'Fathmath', 'Hana', 'Anaz');
+
