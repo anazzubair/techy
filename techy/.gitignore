@@ -1,4 +1,4 @@
-
+src/main/generated/**/*
 .metadata
 bin/**
 tmp/**
