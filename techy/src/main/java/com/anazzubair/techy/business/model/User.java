@@ -14,6 +14,8 @@ import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import javax.persistence.Version;
 
+import org.apache.commons.lang.builder.EqualsBuilder;
+import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.hibernate.annotations.Type;
 import org.joda.time.LocalDateTime;
 
@@ -151,11 +153,9 @@ public class User implements Serializable {
 
 	@Override
 	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result
-				+ ((username == null) ? 0 : username.hashCode());
-		return result;
+		return new HashCodeBuilder(17, 31)
+					.append(username)
+					.toHashCode();
 	}
 
 	@Override
@@ -164,14 +164,12 @@ public class User implements Serializable {
 			return true;
 		if (obj == null)
 			return false;
-		if (getClass() != obj.getClass())
+		if (!(obj instanceof User))
 			return false;
-		User other = (User) obj;
-		if (username == null) {
-			if (other.username != null)
-				return false;
-		} else if (!username.equals(other.username))
-			return false;
-		return true;
-	}
+		
+		User otherUser = (User) obj;
+		return new EqualsBuilder()
+					.append(this.username, otherUser.username)
+					.isEquals();
+	}	
 }
