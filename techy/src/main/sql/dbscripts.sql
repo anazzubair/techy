@@ -36,6 +36,11 @@ CREATE TABLE messageresources
   code text NOT NULL,
   en text NOT NULL,
   fr text NOT NULL,
+  createdon timestamp without time zone NOT NULL DEFAULT now(),
+  createdby bigint NOT NULL,
+  modifiedon timestamp without time zone NOT NULL DEFAULT now(),
+  modifiedby bigint NOT NULL,
+  rowversion bigint NOT NULL DEFAULT 0,
   CONSTRAINT messageresources_pkey PRIMARY KEY (id),
   CONSTRAINT messageresources_code_key UNIQUE (code)
 )
