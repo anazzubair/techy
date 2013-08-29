@@ -146,9 +146,9 @@ public class MessageResource implements Serializable {
 		if (!(obj instanceof MessageResource))
 			return false;
 		
-		MessageResource otherUser = (MessageResource) obj;
+		MessageResource otherMessageResource = (MessageResource) obj;
 		return new EqualsBuilder()
-					.append(this.code, otherUser.code)
+					.append(this.code, otherMessageResource.code)
 					.isEquals();
 	}	
 }
