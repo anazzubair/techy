@@ -29,7 +29,7 @@ import com.anazzubair.techy.web.config.ServletApplicationContext;
 public class IndexControllerTests {
 
 	@InjectMocks
-	IndexController controller;
+	IndexController controller = new IndexController();
 	
 	@Mock
 	UserService userService;

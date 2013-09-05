@@ -10,6 +10,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.PrePersist;
+import javax.persistence.PreUpdate;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import javax.persistence.Version;
@@ -41,7 +43,7 @@ public class MessageResource implements Serializable {
 	private String french;
 	
 	@Column(name = "createdon")
-	@Type(type = "org.jadira.usertype.dateandtime.joda.PersistentDateTime")
+	@Type(type = "org.jadira.usertype.dateandtime.joda.PersistentLocalDateTime")
 	private LocalDateTime createdOn;
 	
 	@JoinColumn(name = "createdby")
@@ -50,7 +52,7 @@ public class MessageResource implements Serializable {
 	
 	
 	@Column(name = "modifiedon")
-	@Type(type = "org.jadira.usertype.dateandtime.joda.PersistentDateTime")
+	@Type(type = "org.jadira.usertype.dateandtime.joda.PersistentLocalDateTime")
 	private LocalDateTime modifiedOn;
 
 	@JoinColumn(name = "modifiedBy")
@@ -128,6 +130,17 @@ public class MessageResource implements Serializable {
 		this.code = code;
 		this.english = english;
 		this.french = french;
+	}
+	
+	@PrePersist
+	public void prePersist() {
+		this.createdOn = new LocalDateTime();
+		this.modifiedOn = new LocalDateTime();
+	}
+	
+	@PreUpdate
+	public void preUpdate() {
+		this.modifiedOn = new LocalDateTime();
 	}
 
 	@Override

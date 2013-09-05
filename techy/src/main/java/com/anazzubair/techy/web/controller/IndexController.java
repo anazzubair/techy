@@ -1,6 +1,6 @@
 package com.anazzubair.techy.web.controller;
 
-import javax.annotation.Resource;
+import javax.inject.Inject;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,7 +20,7 @@ public class IndexController {
 	
 	private final static Logger logger = LoggerFactory.getLogger(IndexController.class);
 	
-	@Resource(name="QueryDslUserService")
+	@Inject
 	private UserService userService;
 	
 	@RequestMapping(value={"/", "/index.html"})

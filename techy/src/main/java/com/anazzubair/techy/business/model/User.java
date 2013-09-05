@@ -16,6 +16,7 @@ import javax.persistence.Version;
 
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
+import org.hibernate.annotations.Index;
 import org.hibernate.annotations.Type;
 import org.joda.time.LocalDateTime;
 
@@ -31,36 +32,37 @@ public class User implements Serializable {
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "UserIdSequenceGenerator")
 	private Long id;
 
-	@Column(name = "username")
+	@Column(name = "username", nullable = false)
 	private String username;
 
-	@Column(name = "firstname")
+	@Column(name = "firstname", nullable = false)
 	private String firstName;
 
-	@Column(name = "middlename")
+	@Column(name = "middlename", nullable = true)
 	private String middleName;
 
-	@Column(name = "lastname")
+	@Column(name = "lastname", nullable = false)
 	private String lastName;
 	
-	@Column(name = "isactive")
+	@Column(name = "isactive", nullable = false)
+	@Index(name = "users_isactive_idx")
 	@Type(type="yes_no")
 	private Boolean isActive;
 	
-	@Column(name = "createdon")
-	@Type(type = "org.jadira.usertype.dateandtime.joda.PersistentDateTime")
+	@Column(name = "createdon", nullable = false)
+	@Type(type = "org.jadira.usertype.dateandtime.joda.PersistentLocalDateTime")
 	private LocalDateTime createdOn;
 	
-	@JoinColumn(name = "createdby")
+	@JoinColumn(name = "createdby", nullable = false)
 	@ManyToOne(fetch=FetchType.LAZY)
 	private User createdBy;
 	
 	
-	@Column(name = "modifiedon")
-	@Type(type = "org.jadira.usertype.dateandtime.joda.PersistentDateTime")
+	@Column(name = "modifiedon", nullable = false)
+	@Type(type = "org.jadira.usertype.dateandtime.joda.PersistentLocalDateTime")
 	private LocalDateTime modifiedOn;
 
-	@JoinColumn(name = "modifiedBy")
+	@JoinColumn(name = "modifiedBy", nullable = false)
 	@ManyToOne(fetch=FetchType.LAZY)
 	private User modifiedBy;
 	

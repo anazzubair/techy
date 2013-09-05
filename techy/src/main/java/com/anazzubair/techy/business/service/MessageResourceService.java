@@ -12,7 +12,7 @@ import com.anazzubair.techy.business.model.MessageResource;
 import com.anazzubair.techy.business.repository.MessageResourceRepository;
 
 @Service
-@Transactional(readOnly = true, propagation = Propagation.MANDATORY)
+@Transactional(readOnly = true, propagation = Propagation.REQUIRED)
 public class MessageResourceService {
 	
 	@Inject

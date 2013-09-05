@@ -7,19 +7,21 @@ import java.util.Locale;
 import java.util.Map;
 
 import javax.annotation.PostConstruct;
-import javax.annotation.Resource;
 import javax.inject.Inject;
 
 import org.springframework.context.support.AbstractMessageSource;
 
 import com.anazzubair.techy.business.model.MessageResource;
 import com.anazzubair.techy.business.service.MessageResourceService;
+import com.anazzubair.techy.business.service.UserService;
 
-@Resource
 public class DatabaseMessageSource extends AbstractMessageSource {
 
 	@Inject
 	MessageResourceService messageResourceService;
+	
+	@Inject
+	UserService userService;
 
 	private Map<String, Map<Locale, String>> messageResourceMap = new HashMap<>();
 	
@@ -66,7 +68,7 @@ public class DatabaseMessageSource extends AbstractMessageSource {
 	private String getMessageText(String code, Locale locale) {
 		synchronized (messageResourceMap) {
 			Map<Locale, String> resource = this.messageResourceMap.get(code);
-			return (resource != null) ? resource.get(locale) : null;
+			return (resource != null) ? resource.get(new Locale(locale.getLanguage())) : null;
 		}
 	}
 	
