@@ -33,6 +33,7 @@ public class DatabaseMessageSourceWiringTests {
 	MessageResourceRepository messageRepository;
 	
 	private final String codeUnderTest = "user.username";
+	private final String expectedResult = "somethingelse";
 	
 	@Before
 	public void setup() {
@@ -40,12 +41,12 @@ public class DatabaseMessageSourceWiringTests {
 		if(resource != null) {
 			messageRepository.delete(resource.getId());
 		}
-		messageRepository.save(new MessageResource(codeUnderTest, "somethingelse", "somethingelsefr"));
+		messageRepository.save(new MessageResource(codeUnderTest, expectedResult, "somethingelsefr"));
 	}
 	
 	@Test
 	public void test_DatabaseMessageSource_is_being_called_for_resources(){
 		String message = messageSource.getMessage("user.username", null, Locale.ENGLISH);
-		assertEquals("somethingelse", message);
+		assertEquals(expectedResult, message);
 	}
 }
