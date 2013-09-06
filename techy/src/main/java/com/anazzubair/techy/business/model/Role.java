@@ -1,6 +1,7 @@
 package com.anazzubair.techy.business.model;
 
 import java.io.Serializable;
+import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -9,6 +10,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
@@ -40,8 +42,11 @@ public class Role implements Serializable {
 	@Type(type="yes_no")
 	private Boolean isActive;
 	
+	@ManyToMany(mappedBy = "roles")
+	private List<User> users;
+	
 	@Column(name = "createdon", nullable = false)
-	@Type(type = "org.jadira.roletype.dateandtime.joda.PersistentLocalDateTime")
+	@Type(type = "org.jadira.usertype.dateandtime.joda.PersistentLocalDateTime")
 	private LocalDateTime createdOn;
 	
 	@JoinColumn(name = "createdby", nullable = false)
@@ -49,7 +54,7 @@ public class Role implements Serializable {
 	private User createdBy;
 	
 	@Column(name = "modifiedon", nullable = false)
-	@Type(type = "org.jadira.roletype.dateandtime.joda.PersistentLocalDateTime")
+	@Type(type = "org.jadira.usertype.dateandtime.joda.PersistentLocalDateTime")
 	private LocalDateTime modifiedOn;
 
 	@JoinColumn(name = "modifiedBy", nullable = false)
@@ -76,6 +81,14 @@ public class Role implements Serializable {
 		this.isActive = isActive;
 	}
 	
+	public List<User> getUsers() {
+		return users;
+	}
+
+	public void setUsers(List<User> users) {
+		this.users = users;
+	}
+
 	public LocalDateTime getCreatedOn() {
 		return createdOn;
 	}

@@ -1,6 +1,7 @@
 package com.anazzubair.techy.business.model;
 
 import java.io.Serializable;
+import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -9,6 +10,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
@@ -51,6 +54,11 @@ public class User implements Serializable {
 	
 	@Column(name = "language", nullable = true)
 	private String language;
+	
+	@ManyToMany
+	@JoinTable(name = "userroles", joinColumns = {@JoinColumn(name = "userid", referencedColumnName = "id")},
+								   inverseJoinColumns = {@JoinColumn(name = "roleid", referencedColumnName = "id")})
+	private List<Role> roles;
 	
 	@Column(name = "createdon", nullable = false)
 	@Type(type = "org.jadira.usertype.dateandtime.joda.PersistentLocalDateTime")
@@ -118,6 +126,14 @@ public class User implements Serializable {
 	
 	public void setLanguage(String language) {
 		this.language = language;
+	}
+
+	public List<Role> getRoles() {
+		return roles;
+	}
+
+	public void setRoles(List<Role> roles) {
+		this.roles = roles;
 	}
 
 	public LocalDateTime getCreatedOn() {
