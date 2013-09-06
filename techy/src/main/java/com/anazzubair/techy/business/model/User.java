@@ -32,7 +32,7 @@ public class User implements Serializable {
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "UserIdSequenceGenerator")
 	private Long id;
 
-	@Column(name = "username", nullable = false)
+	@Column(name = "username", nullable = false, unique = true)
 	private String username;
 
 	@Column(name = "firstname", nullable = false)
