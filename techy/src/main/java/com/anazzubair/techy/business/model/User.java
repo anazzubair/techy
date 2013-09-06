@@ -49,6 +49,9 @@ public class User implements Serializable {
 	@Type(type="yes_no")
 	private Boolean isActive;
 	
+	@Column(name = "language", nullable = true)
+	private String language;
+	
 	@Column(name = "createdon", nullable = false)
 	@Type(type = "org.jadira.usertype.dateandtime.joda.PersistentLocalDateTime")
 	private LocalDateTime createdOn;
@@ -56,7 +59,6 @@ public class User implements Serializable {
 	@JoinColumn(name = "createdby", nullable = false)
 	@ManyToOne(fetch=FetchType.LAZY)
 	private User createdBy;
-	
 	
 	@Column(name = "modifiedon", nullable = false)
 	@Type(type = "org.jadira.usertype.dateandtime.joda.PersistentLocalDateTime")
@@ -108,6 +110,14 @@ public class User implements Serializable {
 
 	public void setIsActive(Boolean isActive) {
 		this.isActive = isActive;
+	}
+	
+	public String getLanguage() {
+		return language;
+	}
+	
+	public void setLanguage(String language) {
+		this.language = language;
 	}
 
 	public LocalDateTime getCreatedOn() {
