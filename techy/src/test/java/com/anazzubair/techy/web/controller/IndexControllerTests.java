@@ -19,7 +19,7 @@ import org.springframework.test.context.web.WebAppConfiguration;
 import org.springframework.test.web.servlet.MockMvc;
 
 import com.anazzubair.techy.business.model.User;
-import com.anazzubair.techy.business.service.UserService;
+import com.anazzubair.techy.business.service.UserServiceImpl;
 import com.anazzubair.techy.web.config.RootApplicationContext;
 import com.anazzubair.techy.web.config.ServletApplicationContext;
 
@@ -32,7 +32,7 @@ public class IndexControllerTests {
 	IndexController controller = new IndexController();
 	
 	@Mock
-	UserService userService;
+	UserServiceImpl userService;
 
 	private MockMvc mockMvc;
 

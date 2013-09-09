@@ -9,6 +9,7 @@ CREATE TABLE users
   firstname text NOT NULL,
   middlename text,
   lastname text NOT NULL,
+  password text NOT NULL,
   isactive character(1) NOT NULL DEFAULT 'N'::bpchar,
   createdon timestamp without time zone NOT NULL DEFAULT now(),
   createdby bigint NOT NULL,

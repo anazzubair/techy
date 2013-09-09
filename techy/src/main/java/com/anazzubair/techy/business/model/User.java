@@ -47,10 +47,13 @@ public class User implements Serializable {
 	@Column(name = "lastname", nullable = false)
 	private String lastName;
 	
+	@Column(name = "password", nullable = false)
+	private String password;
+	
 	@Column(name = "isactive", nullable = false)
 	@Index(name = "users_isactive_idx")
 	@Type(type="yes_no")
-	private Boolean isActive;
+	private Boolean active;
 	
 	@Column(name = "language", nullable = true)
 	private String language;
@@ -112,12 +115,20 @@ public class User implements Serializable {
 		this.lastName = lastName;
 	}
 
-	public Boolean getIsActive() {
-		return isActive;
+	public String getPassword() {
+		return password;
 	}
 
-	public void setIsActive(Boolean isActive) {
-		this.isActive = isActive;
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public Boolean isActive() {
+		return active;
+	}
+
+	public void setActive(Boolean active) {
+		this.active = active;
 	}
 	
 	public String getLanguage() {

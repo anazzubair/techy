@@ -10,4 +10,5 @@ import com.anazzubair.techy.business.model.User;
 @Transactional(readOnly = true, propagation = Propagation.MANDATORY)
 public interface UserRepository extends JpaRepository<User, Long>, QueryDslPredicateExecutor<User> {
 
+	User findByUsername(String username);
 }

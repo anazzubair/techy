@@ -20,13 +20,13 @@ import org.mockito.MockitoAnnotations;
 import org.mockito.runners.MockitoJUnitRunner;
 
 import com.anazzubair.techy.business.model.MessageResource;
-import com.anazzubair.techy.business.service.MessageResourceService;
+import com.anazzubair.techy.business.service.MessageResourceServiceImpl;
 
 @RunWith(MockitoJUnitRunner.class)
 public class DatabaseMessageSourceTests {
 
 	@Mock
-	MessageResourceService messageResourceService;
+	MessageResourceServiceImpl messageResourceService;
 	
 	@Mock
 	MessageResource messageResource;

@@ -13,15 +13,12 @@ import org.springframework.context.support.AbstractMessageSource;
 
 import com.anazzubair.techy.business.model.MessageResource;
 import com.anazzubair.techy.business.service.MessageResourceService;
-import com.anazzubair.techy.business.service.UserService;
+import com.anazzubair.techy.business.service.UserServiceImpl;
 
 public class DatabaseMessageSource extends AbstractMessageSource {
 
 	@Inject
 	MessageResourceService messageResourceService;
-	
-	@Inject
-	UserService userService;
 
 	private Map<String, Map<Locale, String>> messageResourceMap = new HashMap<>();
 	
