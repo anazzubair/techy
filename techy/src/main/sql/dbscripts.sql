@@ -39,7 +39,7 @@ CREATE INDEX users_isactive_idx
 
   
 -- CREATE EXTENSION pgcrypto //Needs to be run as superuser
--- SELECT crypt('anazhana09', gen_salt('bf', 10)) //This is the function to get bcrypt hashed password  
+-- SELECT crypt('password', gen_salt('bf', 10)) //This is the function to get bcrypt hashed password  
   
 
 -- Table: roles
