@@ -16,7 +16,7 @@ CREATE TABLE users
   modifiedon timestamp without time zone NOT NULL DEFAULT now(),
   modifiedby bigint NOT NULL,
   rowversion bigint NOT NULL DEFAULT 0,
-  Language text DEFAULT 'ENGLISH'::text, -- Possible values: ENGLISH, FRENCH
+  language text DEFAULT 'ENGLISH'::text, -- Possible values: ENGLISH, FRENCH
   CONSTRAINT user_pk PRIMARY KEY (id),
   CONSTRAINT user_username_uk UNIQUE (username)
 )
@@ -24,8 +24,8 @@ WITH (
   OIDS=FALSE
 );
 ALTER TABLE users
-  OWNER TO anaz;
-COMMENT ON COLUMN users."Language" IS 'Possible values: ENGLISH, FRENCH';
+  OWNER TO techy;
+COMMENT ON COLUMN users."language" IS 'Possible values: ENGLISH, FRENCH';
 
 
 -- Index: users_isactive_idx
@@ -63,7 +63,7 @@ WITH (
   OIDS=FALSE
 );
 ALTER TABLE roles
-  OWNER TO anaz;
+  OWNER TO techy;
   
   
 -- Table: userroles
@@ -93,7 +93,7 @@ WITH (
   OIDS=FALSE
 );
 ALTER TABLE userroles
-  OWNER TO anaz;
+  OWNER TO techy;
 
 
   
@@ -119,6 +119,6 @@ WITH (
   OIDS=FALSE
 );
 ALTER TABLE messageresources
-  OWNER TO anaz;
+  OWNER TO techy;
 COMMENT ON TABLE messageresources
   IS 'I18N Resources for the application';

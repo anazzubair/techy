@@ -38,9 +38,9 @@ public class PersistenceContext {
 	public DataSource dataSource() {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		dataSource.setDriverClassName("org.postgresql.Driver");
-		dataSource.setUrl("jdbc:postgresql://localhost:5432/anaz");
-		dataSource.setUsername("anaz");
-		dataSource.setPassword("anazhana09");
+		dataSource.setUrl("jdbc:postgresql://192.168.11.18:5432/techy");
+		dataSource.setUsername("techy");
+		dataSource.setPassword("asdf");
 		return dataSource;
 	}
 
