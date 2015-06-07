@@ -21,6 +21,7 @@ import org.mockito.runners.MockitoJUnitRunner;
 
 import com.anazzubair.techy.business.model.MessageResource;
 import com.anazzubair.techy.business.service.MessageResourceServiceImpl;
+import com.anazzubair.techy.web.config.DatabaseMessageSource;
 
 @RunWith(MockitoJUnitRunner.class)
 public class DatabaseMessageSourceTests {

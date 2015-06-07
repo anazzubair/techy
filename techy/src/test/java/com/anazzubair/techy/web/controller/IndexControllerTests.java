@@ -22,6 +22,7 @@ import com.anazzubair.techy.business.model.User;
 import com.anazzubair.techy.business.service.UserServiceImpl;
 import com.anazzubair.techy.web.config.RootApplicationContext;
 import com.anazzubair.techy.web.config.ServletApplicationContext;
+import com.anazzubair.techy.web.controller.IndexController;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @WebAppConfiguration

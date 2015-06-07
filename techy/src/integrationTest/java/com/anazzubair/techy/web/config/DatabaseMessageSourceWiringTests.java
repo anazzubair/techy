@@ -17,6 +17,8 @@ import org.springframework.test.context.web.WebAppConfiguration;
 import com.anazzubair.techy.business.model.MessageResource;
 import com.anazzubair.techy.business.repository.MessageResourceRepository;
 import com.anazzubair.techy.business.service.MessageResourceService;
+import com.anazzubair.techy.web.config.RootApplicationContext;
+import com.anazzubair.techy.web.config.ServletApplicationContext;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @WebAppConfiguration
